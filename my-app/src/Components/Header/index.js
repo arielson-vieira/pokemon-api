@@ -32,10 +32,8 @@ const Header = (params) => {
   return (
     <div className="header">
       <div className="iconsLeft">
-        {/* <a> */}
         <img src={iconPokemon} />
-        {/* </a> */}
-        {/* <a>pokemon</a> */}
+
         <Link to="/">HOME</Link>
         <Link to="/pokemons">POKEMONS</Link>
         <Link to="/">FILMES</Link>

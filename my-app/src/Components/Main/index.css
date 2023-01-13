@@ -1,0 +1,60 @@
+.main {
+    display: flex;
+    width: 100%;
+    height: 920px;
+    background: url('../../Assets/Images/backgroundMain1.jpg');
+    background-size: cover;
+}
+
+.infoMain h1 {
+    background-color: red;
+    padding: 30px 30px;
+    color: white;
+    justify-content: center;
+    margin-right: 199;
+    font-size: 100px;
+    font-weight: 400;
+    font-family: 'Carter One', 'Times New Roman', Times, serif;
+    width: 300px;
+    height: 200px;
+    animation-direction: normal;
+    transition: all 0.5s;
+    animation-delay: 0s;
+}
+
+.infoMain h1:hover {
+    text-align: center;
+    /* color: rgb(0, 201, 169); */
+    
+}
+
+.infoMain span {
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-family: 'Carter One', 'Times New Roman', Times, serif;
+    color: red;
+}
+
+.infoMain p {
+    display: flex;
+    align-items: center;
+    font-weight: 200px;
+    color: black;
+    padding: 30px 10px 20px 10px;
+    width: 50%;
+    font-size: 15px;
+    font-family: 'Chivo Mono', 'Times New Roman', Times, serif;
+}
+
+.infoMain a {
+    margin-left: 50px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(255, 214, 72);
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 450;
+}

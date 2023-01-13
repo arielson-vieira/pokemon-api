@@ -1,0 +1,23 @@
+.home {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.cardHome {
+    padding: 10px;
+}
+
+.cardsPokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttonNextAndPrevious {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,42 @@
+.iconCard {
+  height: 30px;
+  display: flex;
+
+}
+
+.image img {
+  max-width: 250px;
+  min-width: 250px;
+  max-height: 170px;
+  min-height: 170px;
+  display: flex;
+  align-content: center;
+}
+
+.weight, .height, .power {
+  display: flex;
+}
+
+.id {
+  width: 100%;
+  font-family: 'Carter One', Times, serif;
+  font-size: 40px;
+  display: flex;
+  color: #cccccc;
+  padding: 0 20px;
+}
+
+.nameCard {
+  font-family: 'Seymour One', sans-serif;
+  background-color: #008584;
+  color: #cccccc;
+  border-radius: 50px;
+}
+
+.positionNameCard {
+  width: 100%;
+}
+
+.cardModel {
+  background-color: red;
+}

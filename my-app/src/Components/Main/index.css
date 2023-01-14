@@ -2,36 +2,25 @@
     display: flex;
     width: 100%;
     height: 920px;
-    background: url('../../Assets/Images/backgroundMain.jpg');
+    min-height: 100vh;
+    background: url('../../Assets/Images/backgroundMain1.jpg');
     background-size: cover;
 }
 
 .infoMain h1 {
-    background-color: red;
     padding: 30px 30px;
     color: white;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-right: 199;
-    font-size: 100px;
-    font-weight: 400;
+    font-size: 130px;
     font-family: 'Carter One', 'Times New Roman', Times, serif;
-    width: 300px;
-    height: 200px;
-    animation-direction: normal;
-    transition: all 0.5s;
-    animation-delay: 0s;
-}
-
-.infoMain h1:hover {
-    text-align: center;
-    /* color: rgb(0, 201, 169); */
-    
 }
 
 .infoMain span {
     display: flex;
     align-items: center;
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Carter One', 'Times New Roman', Times, serif;
     color: red;
 }
@@ -39,22 +28,70 @@
 .infoMain p {
     display: flex;
     align-items: center;
-    font-weight: 200px;
     color: black;
-    padding: 30px 10px 20px 10px;
+    padding: 0 0 0 40px;
     width: 50%;
     font-size: 15px;
     font-family: 'Chivo Mono', 'Times New Roman', Times, serif;
 }
 
-.infoMain a {
-    margin-left: 50px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: rgb(255, 214, 72);
-    text-decoration: none;
+.buttonInitial {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 30px;
+}
+
+.buttonClick {
+    background: rgb(254,215,76);
     color: black;
-    font-size: 20px;
-    font-weight: 450;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+}
+
+.buttonClick .buttonIcon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(254,215,76);
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.buttonClick:hover .buttonIcon {
+    width: calc(100% - 0.6em);
+}
+
+.buttonClick .buttonIcon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: black;
+}
+
+.buttonClick:hover .buttonIcon svg {
+    transform: translateX(0.1em);
+}
+
+.buttonClick:active .buttonIcon {
+    transform: scale(0.95);
 }

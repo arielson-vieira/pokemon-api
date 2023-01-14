@@ -17,6 +17,7 @@ export default function CardHomePage({
   idCard,
   heightCard,
   weightCard,
+  typeCard,
 }) {
   return (
     <Card
@@ -54,17 +55,21 @@ export default function CardHomePage({
           <div className="nameCard">{nameCard}</div>
         </Typography>
         <Typography variant="body2" color="text.secondary" className="pokeData">
-          <div className="power"><span>Power: {powerCard}</span></div>
-          <div className="height"><span>Height: {heightCard}</span></div>
-          <div className="weight"><span>Weight: {weightCard}</span></div>
+          <div className="power">
+            <span>Power: {powerCard}</span>
+          </div>
+          <div className="height">
+            <span>Height: {heightCard}</span>
+          </div>
+          <div className="weight">
+            <span>Weight: {weightCard}</span>
+          </div>
+          
         </Typography>
-      </CardContent>
-
-      <CardActions>
-        <div>
-          <img src={iconPokeball} className="iconCard"></img>
-        </div>
-      </CardActions>
+      </CardContent><div className="type">
+            <span>{typeCard}</span>
+          </div>
+      <CardActions></CardActions>
     </Card>
   );
 }

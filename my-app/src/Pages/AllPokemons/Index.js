@@ -3,7 +3,8 @@ import "./index.css";
 
 import api from "../../Services/Api/api";
 import Card from "../../Components/Card";
-import Header from "../../Components/Header";
+import Header from "../../Components/Header"
+import Footer from "../../Components/Footer";
 
 const AllPokemons = () => {
   const [pokemons, setPokemons] = useState({
@@ -44,13 +45,11 @@ const AllPokemons = () => {
     });
   }
   return (
-    // <div className="componenteHome">
-    <div className="home">
-      <Header />
+    <div className="cardPokemon">
+      <Header/>
       <div className="cardsPokedex">
         {pokemons?.results.map((pokemon, key) => {
           return (
-            // <div className="cardHome" key={key}>
             <div className="cardHome" key={key}>
               <Card
                 nameCard={pokemon.name}
@@ -62,6 +61,9 @@ const AllPokemons = () => {
                 idCard={pokemon.id}
                 heightCard={pokemon.height}
                 weightCard={pokemon.weight}
+                typeCard={
+                  pokemon.types[1]?.type?.name || pokemon.types[0]?.type?.name
+                }
               />
             </div>
           );
@@ -78,6 +80,7 @@ const AllPokemons = () => {
           Avançar
         </button>
       </div>
+      <Footer/>
     </div>
   );
 };

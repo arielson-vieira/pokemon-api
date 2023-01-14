@@ -13,7 +13,6 @@ const HomePage = () => {
       <Header/>
       <Main/>
       <Footer/>
-      {/* <CursoCss/> */}
     </div>
   );
 };

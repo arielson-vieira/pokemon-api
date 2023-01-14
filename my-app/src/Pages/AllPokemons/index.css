@@ -1,10 +1,11 @@
-.home {
+.cardPokemon {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
     flex-direction: column;
+    background-color: black;
 }
 
 .cardHome {
@@ -15,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .buttonNextAndPrevious {

@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "../Pages/HomePage";
-import Register from "../Components/Register";
+import Register from "../Pages/Register";
 import AllPokemons from "../Pages/AllPokemons/Index";
-import Connect from "../Components/Connect";
+import Connect from "../Pages/Connect"
 
 const AllRoutes = () => (
   <Router>

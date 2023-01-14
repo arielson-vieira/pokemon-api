@@ -12,12 +12,6 @@
        font-family: 'Roboto', sans-serif, Times;
 }
 
-@media(max-width: 480px) {
-       .iconsLeft a, input {
-              display: none;
-       }
-}
-
 .iconsLeft {
        display: flex;
        padding: 0 10px;
@@ -82,10 +76,11 @@
        color: rgb(0, 201, 169);
 }
 
-@media(max-width: 480px) {
-       .iconsRight button {
-              margin-right: 20px;
-              padding: 15px 20px;
-              white-space: nowrap;
-       }
-}
+.iconsRight  button {
+       color: white;
+       text-decoration: none;
+       cursor: pointer;
+       outline: none;
+       border: none;
+       background: transparent;
+     }

@@ -9,6 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Header = (params) => {
+
   const navigate = useNavigate();
   function goToConnect() {
     navigate("/conectar");
@@ -29,12 +30,22 @@ const Header = (params) => {
       theme: "colored",
     });
 
+    function goToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+      });
+  }
+  function goToHome() {
+    navigate("/");
+    goToTop();
+  }
   return (
-    <div className="header">
+    <header className="header">
       <div className="iconsLeft">
-        <img src={iconPokemon} />
+        <img src={iconPokemon} onClick={goToHome}/>
 
-        <Link to="/">HOME</Link>
+        <Link to="/" onClick={goToTop}>HOME</Link>
         <Link to="/pokemons">POKEMONS</Link>
         <Link to="/">FILMES</Link>
         <Link to="/">WALLPAPPERS</Link>
@@ -64,7 +75,7 @@ const Header = (params) => {
           theme="colored"
         />
       </div>
-    </div>
+    </header>
   );
 };
 export default Header;

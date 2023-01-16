@@ -10,6 +10,8 @@
        text-decoration: none;
        transition: all 0.5s;
        font-family: 'Roboto', sans-serif, Times;
+       position: sticky;
+       top: 0;
 }
 
 .iconsLeft {

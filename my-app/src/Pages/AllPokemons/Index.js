@@ -46,7 +46,7 @@ const AllPokemons = () => {
   }
   return (
     <div className="cardPokemon">
-      <Header/>
+      <Header/><div className="allCardPokedex">
       <div className="cardsPokedex">
         {pokemons?.results.map((pokemon, key) => {
           return (
@@ -74,11 +74,12 @@ const AllPokemons = () => {
           disabled={!pokemons.previous}
           onClick={() => getAll(pokemons.previous)}
         >
-          Voltar
+        ←
         </button>
         <button disabled={!pokemons.next} onClick={() => getAll(pokemons.next)}>
-          Avançar
+        →
         </button>
+      </div>
       </div>
       <Footer/>
     </div>

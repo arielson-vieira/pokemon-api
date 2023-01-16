@@ -1,70 +1,48 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./index.css";
 import iconPokemon from "../../Assets/Icon/iconPikachu.png";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  function goToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+  function goToHome() {
+    navigate("/");
+    goToTop();
+  }
+
   return (
     <div className="footer">
-      
       <div className="containerInfo">
         <div className="nameLeft">
-          <a href="https://www.globo.com/">
-            Pokemon Origins 
-          </a>
-          
+          <Link to="/" onClick={goToTop}>
+            Pokemon Origins
+          </Link>
         </div>
-        <div className="iconFooter"><img src={iconPokemon} /></div>
+        <div className="iconFooter" onClick={goToHome}>
+          <img src={iconPokemon} />
+        </div>
         <div className="nameRight">
-          <a href="https://www.globo.com/">Pokemons</a>
-          <a href="https://www.globo.com/"> Origins</a>
-          <a href="https://www.globo.com/"> Filmes</a>
-          <a href="https://www.globo.com/"> Wallpappers</a>
-          
+          <Link to="/pokemons">Pokemons</Link>
+          <Link to="/"> Filmes</Link>
+          <a href="https://www.google.com/search?q=pokemon+wallpaper+4k&tbm=isch&ved=2ahUKEwih5qvj0cz8AhXwBLkGHbgPDwUQ2-cCegQIABAA&oq=pokemon+wallpaper+4k&gs_lcp=CgNpbWcQAzIECCMQJzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoGCAAQCBAeUNsJWKsPYNITaABwAHgAgAFziAG9A5IBAzAuNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=lYzFY-HHOfCJ5OUPuJ-8KA&bih=800&biw=1440">
+            Wallpappers
+          </a>
         </div>
-       
       </div>
 
       <div className="copyright">
         <p> © Copyright 2000 -{new Date().getFullYear()} Pokemon Origins</p>
-        
       </div>
-
     </div>
   );
 };
 export default Footer;
-
-// import React from "react";
-
-// import "./index.css";
-// import iconPokemon from "../../Assets/Icon/iconPikachu.png";
-
-// const Footer = () => {
-//   return (
-//     <div className="footer">
-//       <div className="icon">
-//         <div className="caixaSuperior">
-//           <div className="nomeEsquerda">
-//             <a href="https://www.globo.com/">
-//               Pokemon Origins
-//               <img src={iconPokemon} />
-//             </a>
-//           </div>
-//         </div>
-//         <div className="nomeDireita">
-//           <a href="https://www.globo.com/">Pokemons</a>
-//           <a href="https://www.globo.com/"> Origins</a>
-//           <a href="https://www.globo.com/"> Filmes</a>
-//           <a href="https://www.globo.com/"> Wallpappers</a>
-//         </div>
-//       </div>
-
-//       <div className="logoGlobo">
-//         <img src={iconGlobo}alt='carregando ícone'></img>
-//         <p> © Copyright 2000 -{new Date().getFullYear()} Pokemon Origins</p>
-//       </div>
-//     </div>
-//   );
-// };
-// export default Footer;

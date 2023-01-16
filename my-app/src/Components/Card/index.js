@@ -29,9 +29,10 @@ export default function CardHomePage({
         justifyContent: "center",
         maxHeight: "420px",
         minHeight: "4px",
-        backgroundColor: "#008584",
+        backgroundColor: "white",
         textAlign: "center",
         alignItems: "center",
+        border: "solid",
       }}
       className="cardModel"
     >
@@ -39,6 +40,7 @@ export default function CardHomePage({
         sx={{ height: 130 }}
         image="/static/images/cards/contemplative-reptile.jpg"
         title="green iguana"
+        
       />
       <div className="id">{idCard}</div>
       <CardContent>

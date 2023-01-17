@@ -1,22 +1,34 @@
 .register {
+    height: 100%;
     width: 100%;
-    /* height: 920px; */
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
- 
-}
+ }
 
 .register input {
+   background-color:rgb(0, 201, 169);;
     border-radius: 10px;
-    margin-top: 10px;
+    margin: 10px 0px;
 }
 
-.register p {
-    font-family: 'Roboto', sans-serif, Times;
-    font-size: 25px;
-    color: white;
-    margin-left: 10px;
+.formData {
+    min-height: 100vh;
+    padding-right: 30px;
+    background: url('../../Assets/Images/RegisterBackground.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, repeat-x;
+    background-position: top right, center;
+    background-size: cover;
+}
+
+.formData h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(252, 201, 65);
+    background-color: rgb(0, 201, 169);
+    border-radius: 10px;
+    
 }
 
 .formData form {
@@ -29,14 +41,66 @@
     margin-top: 30px;
 }
 
-.formData {
-    min-height: 100vh;
-    padding-right: 30px;
-    background: url('../../Assets/Images/RegisterBackground.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-repeat: no-repeat, repeat-x;
-    background-position: top right, center;
-    background-size: cover;
+.allButtonRegister button {
+    font-family: inherit;
+    font-size: 20px;
+    background: rgb(0, 201, 169);
+    color: rgb(252, 201, 65);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.buttonRegister button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.allButtonRegister button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.allButtonRegister button:hover .buttonConnect {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.allButtonRegister button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.allButtonRegister button:hover span {
+    transform: translateX(5em);
+}
+
+.allButtonRegister button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+.allButtonRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-self: center;
+    margin-top: 30px;
+
+
 
 }

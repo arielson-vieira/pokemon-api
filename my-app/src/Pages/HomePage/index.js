@@ -13,8 +13,9 @@ const HomePage = () => {
   }
 
   return (
+  <div className="homePageAll"><Header/>
     <div className="main">
-      <Header/>
+      
       <div className="infoMain">
         <h1>
           POKEMON<span> Origins</span>
@@ -54,6 +55,7 @@ const HomePage = () => {
         </div>
       </div>
       <Footer/>
+    </div>
     </div>
   );
 };

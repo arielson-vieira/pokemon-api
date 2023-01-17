@@ -1,22 +1,19 @@
-.footer {
-
+.footerContainer {
+    display: flex;
     flex-direction: column;
     background-color: #1c232e;
-    height: 200px;
     width: 100%;
     color: white;
     padding-top: 20px;
-
 }
 
-.copyright p {
+.copyright footer {
     display: flex;
     font-size: 15px;
 
     font-family: 'Roboto', sans-serif, Times;
     margin-top: 80px;
     padding-left: 20px;
-
 }
 
 .copyright {
@@ -32,14 +29,12 @@
     font-size: 30px;
     font-family: 'Roboto', sans-serif, Times;
     background-color: b;
-
 }
 
 .nameRight {
     display: flex;
     width: 80%;
     justify-content: end;
-
 }
 
 .nameRight a {
@@ -56,14 +51,11 @@
     color: rgb(0, 201, 169);
     text-decoration: wavy;
     border-radius: 10px;
- 
-
 }
 
 .nameLeft {
     display: flex;
     width: 20%;
-
 }
 
 .nameLeft a {
@@ -72,12 +64,10 @@
     padding-left: 20px;
     color: white;
     font-family: 'Carter One', 'Times New Roman', Times, serif;
-
 }
 
 .nameLeft a:hover {
     color: rgb(0, 201, 169);
-
 }
 
 .iconFooter img {
@@ -88,5 +78,4 @@
 .iconFooter img:hover {
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
-
 }

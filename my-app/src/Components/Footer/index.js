@@ -20,7 +20,7 @@ const Footer = () => {
   }
 
   return (
-    <div className="footer">
+    <div className="footerContainer">
       <div className="containerInfo">
         <div className="nameLeft">
           <Link to="/" onClick={goToTop}>
@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
 
       <div className="copyright">
-        <p> © Copyright 2000 -{new Date().getFullYear()} Pokemon Origins</p>
+        <footer> © Copyright 2000 -{new Date().getFullYear()} Pokemon Origins</footer>
       </div>
     </div>
   );

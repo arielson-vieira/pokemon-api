@@ -19,6 +19,7 @@ const Connect = () => {
               <input required="required" type="text" />
               <span>Login</span>
               <i></i>
+              
             </div>
             <div className="inputPassword">
               <input required="required" type="password" />
@@ -44,6 +45,14 @@ const Connect = () => {
                 <span>Logar</span>
               </button>
             </div>
+
+            <div className="forgotPassword">
+<button>Esqueceu a senha?
+</button>
+              
+</div>
+
+
           </form>
         </div>
       </div>

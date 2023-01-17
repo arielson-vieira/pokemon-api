@@ -43,7 +43,6 @@ const Register = () => {
             onChange={pegarDados}
             name="sobrenome"
           />
-
           <input
             type={"email"}
             placeholder="E-mail"

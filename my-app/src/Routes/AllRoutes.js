@@ -4,6 +4,7 @@ import HomePage from "../Pages/HomePage";
 import Register from "../Pages/Register";
 import AllPokemons from "../Pages/AllPokemons/Index";
 import Connect from "../Pages/Connect"
+import Page404 from "../Pages/Page404";
 
 const AllRoutes = () => (
   <Router>
@@ -13,6 +14,7 @@ const AllRoutes = () => (
       <Route exact path="/registro" element={<Register />} />
       <Route exact path="/pokemons" element={<AllPokemons />} />
       <Route exact path="/conectar" element={<Connect />} />
+      <Route exact path="/error404" element={<Page404 />} />
     </Routes>
   </Router>
 );

@@ -27,7 +27,7 @@
 .infoMain p {
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
     padding: 0 0 0 40px;
     font-size: 15px;
     font-family: 'Chivo Mono', 'Times New Roman', Times, serif;
@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: url('../../Assets/Images/backgroundMain1.jpg');
+    background: url('../../Assets/Images/backgroundMain.gif');
     background-repeat: no-repeat;
     background-repeat: no-repeat, repeat-x;
     background-position: top right, center;
@@ -113,7 +113,7 @@
 }
 
 .cube .bg-inner {
-    background-color: white;
+    background-color: red;
     position: absolute;
     left: 2px;
     right: 2px;

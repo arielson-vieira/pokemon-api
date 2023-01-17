@@ -31,7 +31,9 @@
     position: absolute;
     left: 0;
     padding: 20px 10px 10px;
-    font-size: 1em;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 17px;
+    font-weight: bold;
     color: rgb(252, 201, 65);
     letter-spacing: 00.05em;
     transition: 0.5s;
@@ -87,7 +89,9 @@
     position: absolute;
     left: 0;
     padding: 20px 10px 10px;
-    font-size: 1em;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 17px;
+    font-weight: bold;
     color: rgb(252, 201, 65);
     letter-spacing: 00.05em;
     transition: 0.5s;
@@ -132,12 +136,8 @@
 .formContainer form {
     display: flex;
     flex-direction: column;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
+    height: 350px;
     align-items: center;
-    align-items: flex-end;
-    align-self: flex-end;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.3);
     margin-top: 30px;
@@ -209,7 +209,19 @@
     align-items: baseline;
     align-self: center;
     margin-top: 30px;
+}
 
+.forgotPassword button {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: transparent;
+    color: rgb(252, 201, 65);
+    border: none;
+    padding: 10px;
+}
 
-
+.forgotPassword button:hover {
+    color: lightcoral;
 }

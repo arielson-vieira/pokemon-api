@@ -24,7 +24,6 @@
        padding: 0 16px;
        text-decoration: none;
        transition: all 0.5s;
-       align-items: self-start;
        justify-content: center;
        padding-top: 8px;
        color: inherit;
@@ -104,6 +103,7 @@
 
 .inputSearch input::placeholder input {
        color: #777;
+
 }
 
 .iconInput {

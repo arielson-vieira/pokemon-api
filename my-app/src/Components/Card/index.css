@@ -10,8 +10,9 @@
   min-height: 170px;
   display: flex;
   align-content: center;
-  margin-bottom: 10px;  
-  background-color: rgb(11,74,77);;
+  margin-bottom: 10px;
+  background-color: rgb(11, 74, 77);
+  ;
 }
 
 .weight, .height, .power {
@@ -23,13 +24,16 @@
   font-family: 'Carter One', Times, serif;
   font-size: 25px;
   display: flex;
-  color:rgb(11,74,77);
-  padding: 10px 0 0 20px;
+  flex-direction: column;
+  align-items: baseline;
+  color: rgb(11, 74, 77);
+  padding: 20px 0 0 20px;
 }
 
 .nameCard {
   font-family: 'Seymour One', sans-serif;
-  background-color:rgb(11,74,77);
+  font-size: 25px;
+  background-color: rgb(11, 74, 77);
   color: white;
   border-radius: 50px;
 }
@@ -39,24 +43,32 @@
 }
 
 .height {
-color: black;
-font-size: 17px;
-background-color: greenyellow;
+  color: black;
+  font-size: 17px;
+  background-color: greenyellow;
 }
 
 .weight {
-color: black;
-font-size: 17px;
-background-color: lightskyblue;
+  color: black;
+  font-size: 17px;
+  background-color: lightskyblue;
 }
 
 .power {
-color: black;
-font-size: 17px;
-background-color: red;
+  color: black;
+  font-size: 17px;
+  background-color: red;
 }
 
 .type {
-color:rgb(11,74,77);
-font-size: 30px;
+  color: rgb(11, 74, 77);
+  font-size: 30px;
+}
+
+.icon {
+display: flex;
+flex-direction: column;
+  height: 40px;
+  min-height: 40px;
+  margin-bottom: 10px;
 }

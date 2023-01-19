@@ -18,7 +18,7 @@ const AllPokemons = () => {
 
   useEffect(() => {
     getAll("pokemon/");
-  }, []);
+  },[]);
 
   function getAll(url) {
     api

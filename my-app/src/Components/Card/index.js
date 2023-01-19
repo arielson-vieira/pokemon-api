@@ -12,9 +12,24 @@ import IconFire from "../../Assets/Icon/iconFire.png";
 import IconPoison from "../../Assets/Icon/iconPoison.png";
 import IconFlying from "../../Assets/Icon/iconFlying.png";
 import IconWater from "../../Assets/Icon/iconWater.png";
+import IconBug from "../../Assets/Icon/iconBug.png";
+import IconNormal from "../../Assets/Icon/iconNormal.png";
+import IconFairy from "../../Assets/Icon/iconFairy.png";
+import IconGround from "../../Assets/Icon/iconGround.png";
+import IconElectric from "../../Assets/Icon/iconElectric.png";
+import IconFighting from "../../Assets/Icon/iconFighting.png";
+import IconGrass from "../../Assets/Icon/iconGrass.png";
+import IconPsychic from "../../Assets/Icon/iconPsychic.png";
+import IconIce from "../../Assets/Icon/iconIce.png";
+import IconSteel from "../../Assets/Icon/iconSteel.png";
+import IconRock from "../../Assets/Icon/iconRock.png";
+import IconDragon from "../../Assets/Icon/iconDragon.png";
+import IconDark from "../../Assets/Icon/iconDark.png";
+import IconGhost from "../../Assets/Icon/iconGhost.png";
 
 import IconPower from "../../Assets/Icon/iconPower.png";
 import IconHeight from "../../Assets/Icon/iconHeight.png";
+import IconWeight from "../../Assets/Icon/iconWeight.png";
 
 export default function CardHomePage({
   nameCard,
@@ -27,41 +42,41 @@ export default function CardHomePage({
 }) {
   const getCardIcon = (typeCard) => {
     if (typeCard === "poison") {
-      return <img src={IconPoison} alt="" className="poison" />;
+      return <img src={IconPoison} alt="" />;
     } else if (typeCard === "fire") {
-      return <img src={IconFire} alt="" className="fire" />;
+      return <img src={IconFire} alt="" />;
     } else if (typeCard === "flying") {
-      return <img src={IconFlying} alt="" className="flying" />;
+      return <img src={IconFlying} alt="" />;
     } else if (typeCard === "water") {
-      return <img src={IconWater} alt="" className="water" />;
+      return <img src={IconWater} alt="" />;
     } else if (typeCard === "bug") {
-      return "Texto 5";
+      return <img src={IconBug} alt="" />;
     } else if (typeCard === "normal") {
-      return "Texto 6";
+      return <img src={IconNormal} alt="" />;
     } else if (typeCard === "fairy") {
-      return "Texto 7";
+      return <img src={IconFairy} alt="" />;
     } else if (typeCard === "ground") {
-      return "Texto 8";
+      return <img src={IconGround} alt="" />;
     } else if (typeCard === "electric") {
-      return "Texto 9";
+      return <img src={IconElectric} alt="" />;
     } else if (typeCard === "fighting") {
-      return "Texto 10";
+      return <img src={IconFighting} alt="" />;
     } else if (typeCard === "grass") {
-      return "Texto 11";
+      return <img src={IconGrass} alt="" />;
     } else if (typeCard === "psychic") {
-      return "Texto 12";
+      return <img src={IconPsychic} alt="" />;
     } else if (typeCard === "ice") {
-      return "Texto 13";
+      return <img src={IconIce} alt="" />;
     } else if (typeCard === "steel") {
-      return "Texto 14";
+      return <img src={IconSteel} alt="" />;
     } else if (typeCard === "rock") {
-      return "Texto 15";
+      return <img src={IconRock} alt="" />;
     } else if (typeCard === "dragon") {
-      return "Texto 16";
+      return <img src={IconDragon} alt="" />;
     } else if (typeCard === "dark") {
-      return "Texto 17";
+      return <img src={IconDark} alt="" />;
     } else if (typeCard === "ghost") {
-      return "Texto 18";
+      return <img src={IconGhost} alt="" />;
     } else {
       return "desconhecido";
     }
@@ -117,7 +132,7 @@ export default function CardHomePage({
           <img src={IconPower} alt="" />
           <img src={IconPower} alt="" />
         </span>
-      )
+      );
     }
   };
 
@@ -142,7 +157,7 @@ export default function CardHomePage({
           <img src={IconHeight} alt="" />
           <img src={IconHeight} alt="" />
         </span>
-      )
+      );
     } else if (heightCard <= 32) {
       return (
         <span className="heightCardIcon">
@@ -151,7 +166,7 @@ export default function CardHomePage({
           <img src={IconHeight} alt="" />
           <img src={IconHeight} alt="" />
         </span>
-      )
+      );
     } else if (heightCard <= 40) {
       return (
         <span className="heightCardIcon">
@@ -161,7 +176,7 @@ export default function CardHomePage({
           <img src={IconHeight} alt="" />
           <img src={IconHeight} alt="" />
         </span>
-      )
+      );
     } else {
       return (
         <span className="heightCardIcon">
@@ -171,17 +186,61 @@ export default function CardHomePage({
           <img src={IconHeight} alt="" />
           <img src={IconHeight} alt="" />
         </span>
-      )
+      );
     }
   };
 
-  const getWeidth = (weightCard) => {
+  const getWeigth = (weightCard) => {
     if (weightCard <= 180) {
-      return <span>1bolinha</span>;
+      return (
+        <span className="weightCardIcon">
+          <img src={IconWeight} alt="" />
+        </span>
+      );
     } else if (weightCard <= 360) {
-      return <span>2bolinha</span>;
+      return (
+        <span className="weightCardIcon">
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+        </span>
+      );
+    } else if (weightCard <= 540) {
+      return (
+        <span className="weightCardIcon">
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+        </span>
+      );
+    } else if (weightCard <= 720) {
+      return (
+        <span className="weightCardIcon">
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+        </span>
+      );
+    } else if (weightCard <= 900) {
+      return (
+        <span className="weightCardIcon">
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+        </span>
+      );
     } else {
-      return <span>5bolinhas</span>;
+      return (
+        <span className="weightCardIcon">
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+          <img src={IconWeight} alt="" />
+        </span>
+      );
     }
   };
 
@@ -223,27 +282,20 @@ export default function CardHomePage({
         </Typography>
         <Typography variant="body2" color="text.secondary" className="pokeData">
           <div className="power">
-            <span>
-              Power: {powerCard}
-              {getPower(powerCard)}
-            </span>
+            <span>Power: {powerCard} </span>
+            <p>{getPower(powerCard)}</p>
           </div>
           <div className="height">
-            <span>
-              Height: {heightCard}
-              {getHeigth(heightCard)}
-            </span>
+            <span> Height: {heightCard}</span>
+            <p>{getHeigth(heightCard)}</p>
           </div>
           <div className="weight">
-            <span>
-              Weight: {weightCard} {getWeidth(weightCard)}
-            </span>
+            <span>Weight: {weightCard}</span>
+            <p>{getWeigth(weightCard)}</p>
           </div>
         </Typography>
       </CardContent>
-      <div className="type">
-        <span>{getCardIcon(typeCard)}</span>
-      </div>
+      <div className="type">{getCardIcon(typeCard)}</div>
       <CardActions></CardActions>
     </Card>
   );

@@ -12,11 +12,6 @@
   align-content: center;
   margin-bottom: 10px;
   background-color: rgb(11, 74, 77);
-  ;
-}
-
-.weight, .height, .power {
-  display: flex;
 }
 
 .id {
@@ -45,20 +40,56 @@
 .height {
   color: black;
   font-size: 17px;
-  background-color: greenyellow;
+  display: flex;
+  max-height: 30px;
+  justify-content: space-between;
+}
+
+.height p {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  justify-content: baseline;
+  margin: 0 0;
+  width: 57%;
 }
 
 .weight {
   color: black;
   font-size: 17px;
-  background-color: lightskyblue;
+  display: flex;
+  max-height: 30px;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.weight p {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  justify-content: baseline;
+  margin: 0 0px;
+  width: 57%;
 }
 
 .power {
   color: black;
   font-size: 17px;
   display: flex;
-  justify-self: center;
+  max-height: 30px;
+  justify-content: space-between;
+}
+
+.power p {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  justify-content: baseline;
+  margin: 0 0px;
+  width: 57%;
 }
 
 .type {
@@ -66,22 +97,28 @@
   font-size: 30px;
 }
 
-.poison, .fire, .flying, .water {
-display: flex;
-flex-direction: column;
+.type img {
+  display: flex;
+  flex-direction: column;
   height: 40px;
   min-height: 40px;
   margin-bottom: 10px;
 }
 
-.powerCardIcon img{
-max-height: 23px;
-min-height: 23px;
-margin: 0 0 5px 10px
-}
-.heightCardIcon img{
-max-height: 23px;
-min-height: 23px;
-margin: 0 0 5px 10px;
+.powerCardIcon img {
+  max-height: 23px;
+  min-height: 23px;
+  margin-right: 5px;
 }
 
+.heightCardIcon img {
+  max-height: 23px;
+  min-height: 23px;
+  margin-right: 5px;
+}
+
+.weightCardIcon img {
+  max-height: 23px;
+  min-height: 23px;
+  margin-right: 5px;
+}

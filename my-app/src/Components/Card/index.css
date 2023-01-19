@@ -57,7 +57,8 @@
 .power {
   color: black;
   font-size: 17px;
-  background-color: red;
+  display: flex;
+  justify-self: center;
 }
 
 .type {
@@ -65,10 +66,22 @@
   font-size: 30px;
 }
 
-.icon {
+.poison, .fire, .flying, .water {
 display: flex;
 flex-direction: column;
   height: 40px;
   min-height: 40px;
   margin-bottom: 10px;
 }
+
+.powerCardIcon img{
+max-height: 23px;
+min-height: 23px;
+margin: 0 0 5px 10px
+}
+.heightCardIcon img{
+max-height: 23px;
+min-height: 23px;
+margin: 0 0 5px 10px;
+}
+

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./index.css";
-
+import { useAuth } from "../../Services/Providers/auth";
 import Footer from "../../Components/Footer";
+import { Link, useNavigate } from "react-router-dom";
+
 
 import Header from "../../Components/Header";
 
@@ -9,16 +11,31 @@ const Connect = () => {
   const [login, setLogin] = useState("");
   const [senha, setSenha] = useState("");
 
+  const { userConnect, setUserConnect } = useAuth();
+  const { userPublic, setUserPublic } = useAuth();
+
+    const navigate = useNavigate();
+
+
   function goToTop() {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }
+  
+
 
   useEffect(() => {
     goToTop();
   }, []);
+
+  function userLogin(params) {
+    setUserConnect(true)
+    setUserPublic(false)
+    navigate("/");
+
+  }
 
   return (
     <div className="pageConnect">
@@ -37,7 +54,7 @@ const Connect = () => {
               <i></i>
             </div>
             <div className="allButtonConnect">
-              <button onSubmit={""}>
+              <button onSubmit={""} onClick={userLogin}>
                 <div className="buttonConnect">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

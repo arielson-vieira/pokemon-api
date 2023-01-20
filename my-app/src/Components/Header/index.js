@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./index.css";
 
@@ -8,14 +8,21 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
-import IconUser from "../../Assets/Icon/iconPokeball.png"
+import IconUser from "../../Assets/Icon/iconPokeball.png";
+import { useAuth } from "../../Services/Providers/auth";
 
 const Header = (params) => {
+  const { userConnect, setUserConnect } = useAuth();
+
+  const {userPublic, setUserPublic} = useAuth();
+
   const navigate = useNavigate();
+
   function goToConnect() {
     navigate("/conectar");
     goToTop();
   }
+
   function goToRegister() {
     navigate("/registro");
     goToTop();
@@ -51,9 +58,7 @@ const Header = (params) => {
         <Link to="/" onClick={goToTop}>
           HOME
         </Link>
-        <Link to="/pokemons">
-          POKEMONS
-        </Link>
+        <Link to="/pokemons">POKEMONS</Link>
         <Link to="/" onClick={goToTop}>
           FILMES
         </Link>
@@ -71,19 +76,22 @@ const Header = (params) => {
           </svg>
           <input placeholder="Pesquisar" type="search" class="inputSearch" />
         </div>
-
-        <button onClick={goToConnect}>
-          <span className="buttonsHome">CONECTAR</span>
-        </button>
-
-        <button onClick={goToRegister}>
-          <span className="buttonsHome">REGISTRAR</span>
-        </button>
-        <div className="userConnected">
-        <button>Username</button>
-        <img src={IconUser}/>
-
-        </div>
+         {userPublic && (
+          <>
+            <button onClick={goToConnect}>
+              <span className="buttonsHome">CONECTAR</span>
+            </button>
+            <button onClick={goToRegister}>
+              <span className="buttonsHome">REGISTRAR</span>
+            </button>
+          </>
+        )}
+        {userConnect && (
+          <div className="userConnected">
+            <button>Username</button>
+            <img src={IconUser} />
+          </div>
+        )}
         <ToastContainer
           position="top-right"
           autoClose={5000}

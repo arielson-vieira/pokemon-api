@@ -5,7 +5,7 @@ import AllRoutes from "./Routes/AllRoutes";
 const App = () => {
   return (
     <div className="app">
-     <AllRoutes/>
+      <AllRoutes />      
     </div>
   );
 };

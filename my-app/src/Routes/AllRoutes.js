@@ -9,7 +9,8 @@ import Page404 from "../Pages/Page404";
 const AllRoutes = () => (
   <Router>
     {/* <Home/> */}
-    <Routes>
+   
+        <Routes>
       <Route exact path="/" element={<HomePage />} />
       <Route exact path="/registro" element={<Register />} />
       <Route exact path="/pokemons" element={<AllPokemons />} />

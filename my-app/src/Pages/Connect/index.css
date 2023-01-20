@@ -212,7 +212,7 @@
     margin-top: 30px;
 }
 
-.forgotPassword button {
+.userConnected button {
     font-family: sans-serif, Arial, Helvetica;
     font-size: 13px;
     font-weight: bold;
@@ -223,6 +223,6 @@
     padding: 10px;
 }
 
-.forgotPassword button:hover {
+.userConnected button:hover {
     color: lightcoral;
 }

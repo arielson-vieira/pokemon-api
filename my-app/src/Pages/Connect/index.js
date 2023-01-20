@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 
 import Footer from "../../Components/Footer";
@@ -8,6 +8,17 @@ import Header from "../../Components/Header";
 const Connect = () => {
   const [login, setLogin] = useState("");
   const [senha, setSenha] = useState("");
+
+  function goToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+  useEffect(() => {
+    goToTop();
+  }, []);
 
   return (
     <div className="pageConnect">
@@ -19,7 +30,6 @@ const Connect = () => {
               <input required="required" type="text" />
               <span>Login</span>
               <i></i>
-              
             </div>
             <div className="inputPassword">
               <input required="required" type="password" />
@@ -47,12 +57,8 @@ const Connect = () => {
             </div>
 
             <div className="forgotPassword">
-<button>Esqueceu a senha?
-</button>
-              
-</div>
-
-
+              <button>Esqueceu a senha?</button>
+            </div>
           </form>
         </div>
       </div>

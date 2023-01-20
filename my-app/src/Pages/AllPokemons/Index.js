@@ -16,9 +16,17 @@ const AllPokemons = () => {
 
   const [loading, setLoading] = useState(true);
 
+  function goToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   useEffect(() => {
     getAll("pokemon/");
-  },[]);
+    goToTop()
+  }, []);
 
   function getAll(url) {
     api

@@ -28,7 +28,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="iconFooter" onClick={goToHome}>
-          <img src={iconPokemon} alt='' />
+          <img src={iconPokemon} alt="" />
         </div>
         <div className="nameRight">
           <Link to="/pokemons">Pokemons</Link>

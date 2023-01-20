@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./index.css";
 import Header from "../../Components/Header/index";
@@ -12,19 +12,28 @@ const Register = () => {
   const [confirmarEmail, setConfirmarEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [confirmarSenha, setConfirmarSenha] = useState("");
-
-  function pararEventoForm(e) {
-    e.preventDefault();
-  }
-
   const [dados, setDados] = useState({});
   const handleRadioChange = (value) => {
     setCurrentValue(value);
   };
   const [currentRadioValue, setCurrentValue] = React.useState("on");
+
   function pegarDados(e) {
     setDados({ [e.target.name]: e.target.value });
   }
+  function pararEventoForm(e) {
+    e.preventDefault();
+  }
+  function goToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
+  useEffect(() => {
+    goToTop();
+  }, []);
 
   return (
     <div className="register">

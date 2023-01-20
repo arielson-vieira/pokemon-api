@@ -8,13 +8,17 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
+import IconUser from "../../Assets/Icon/iconPokeball.png"
+
 const Header = (params) => {
   const navigate = useNavigate();
   function goToConnect() {
     navigate("/conectar");
+    goToTop();
   }
   function goToRegister() {
     navigate("/registro");
+    goToTop();
   }
 
   const notify = () =>
@@ -47,9 +51,15 @@ const Header = (params) => {
         <Link to="/" onClick={goToTop}>
           HOME
         </Link>
-        <Link to="/pokemons">POKEMONS</Link>
-        <Link to="/">FILMES</Link>
-        <Link to="/">WALLPAPPERS</Link>
+        <Link to="/pokemons">
+          POKEMONS
+        </Link>
+        <Link to="/" onClick={goToTop}>
+          FILMES
+        </Link>
+        <Link to="/" onClick={goToTop}>
+          WALLPAPPERS
+        </Link>
       </div>
 
       <div className="iconsRight">
@@ -69,7 +79,11 @@ const Header = (params) => {
         <button onClick={goToRegister}>
           <span className="buttonsHome">REGISTRAR</span>
         </button>
+        <div className="userConnected">
+        <button>Username</button>
+        <img src={IconUser}/>
 
+        </div>
         <ToastContainer
           position="top-right"
           autoClose={5000}

@@ -3,8 +3,13 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import Header from "../../Components/Header/index";
 import Footer from "../../Components/Footer";
+import LoginSucess from "../../Assets/Icon/iconLoginSucess.png";
+import { useAuth } from "../../Services/Providers/auth";
 
 const Register = () => {
+  const { userUnregistered, setUserUnregistered } = useAuth();
+  const { userRegisterDone, setUserRegisterDone } = useAuth();
+
   const [nome, setNome] = useState("");
   const [sobrenome, setSobrenome] = useState("");
   const [cpf, setCpf] = useState(Number);
@@ -31,6 +36,12 @@ const Register = () => {
     });
   }
 
+  function userRegister(e) {
+    setUserRegisterDone(true)
+    setUserUnregistered(false)
+    
+  }
+
   useEffect(() => {
     goToTop();
   }, []);
@@ -38,6 +49,9 @@ const Register = () => {
   return (
     <div className="register">
       <Header />
+      
+      <div className="registerData">
+      {userUnregistered && ( 
       <div className="formData">
         <form onSubmit={pararEventoForm}>
           <input
@@ -78,7 +92,7 @@ const Register = () => {
           />
 
           <div className="allButtonRegister">
-            <button onSubmit={""}>
+            <button onSubmit={""} onClick={userRegister}>
               <div className="buttonRegister">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +110,14 @@ const Register = () => {
               <span>Cadastrar</span>
             </button>
           </div>
-        </form>
+        </form></div>)}
+
+        {userRegisterDone && (
+          <div className="registerDone">
+            <p>Cadastro realizado, bem-vindo!</p>
+            <img src={LoginSucess} />
+          </div>
+        )}
       </div>
       <Footer />
     </div>

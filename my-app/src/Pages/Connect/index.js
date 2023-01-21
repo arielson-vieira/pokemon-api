@@ -4,7 +4,6 @@ import { useAuth } from "../../Services/Providers/auth";
 import Footer from "../../Components/Footer";
 import { Link, useNavigate } from "react-router-dom";
 
-
 import Header from "../../Components/Header";
 
 const Connect = () => {
@@ -14,8 +13,7 @@ const Connect = () => {
   const { userConnect, setUserConnect } = useAuth();
   const { userPublic, setUserPublic } = useAuth();
 
-    const navigate = useNavigate();
-
+  const navigate = useNavigate();
 
   function goToTop() {
     window.scrollTo({
@@ -23,18 +21,15 @@ const Connect = () => {
       behavior: "smooth",
     });
   }
-  
-
 
   useEffect(() => {
     goToTop();
   }, []);
 
-  function userLogin(params) {
-    setUserConnect(true)
-    setUserPublic(false)
+  function userLogin(e) {
+    setUserConnect(true);
+    setUserPublic(false);
     navigate("/");
-
   }
 
   return (
@@ -72,7 +67,6 @@ const Connect = () => {
                 <span>Logar</span>
               </button>
             </div>
-
             <div className="forgotPassword">
               <button>Esqueceu a senha?</button>
             </div>

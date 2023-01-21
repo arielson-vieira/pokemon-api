@@ -11,9 +11,22 @@
     margin: 10px 0px;
 }
 
-.formData {
+.registerData {
     min-height: 100vh;
     padding-right: 30px;
+    background: url('../../Assets/Icon/ashGiff.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, repeat-x;
+    background-position: top right, center;
+    background-size: cover;
+}
+
+.formData {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    position: absolute;
     background: url('../../Assets/Images/RegisterBackground.jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -91,4 +104,24 @@
     align-items: baseline;
     align-self: center;
     margin-top: 30px;
+}
+
+.registerDone {
+    display: flex;
+    justify-content: center;
+    max-height: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 50px 0 0 30px;
+    /* width: 50%; */
+}
+
+.registerDone img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.registerDone p {
+    font-size: 30px;
+    color: rgb(252, 201, 65);
+    margin-right: 20px;
 }

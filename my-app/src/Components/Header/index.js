@@ -8,7 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 
-import IconUser from "../../Assets/Icon/iconPokeball.png";
+import IconUser from "../../Assets/Icon/iconEu.png";
 import { useAuth } from "../../Services/Providers/auth";
 
 const Header = (params) => {
@@ -88,7 +88,7 @@ const Header = (params) => {
         )}
         {userConnect && (
           <div className="userConnected">
-            <button>Username</button>
+            <p>Username</p>
             <img src={IconUser} />
           </div>
         )}

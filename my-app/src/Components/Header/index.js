@@ -58,10 +58,12 @@ const Header = (params) => {
         <Link to="/" onClick={goToTop}>
           HOME
         </Link>
-        <Link to="/pokemons">POKEMONS</Link>
         <Link to="/" onClick={goToTop}>
           FILMES
         </Link>
+        {userConnect &&(
+        <Link to="/pokemons">POKEMONS</Link>
+      )}
       </div>
       <div className="iconsRight">
         <div className="group">
@@ -86,6 +88,7 @@ const Header = (params) => {
           <div className="userConnected">
             <p>Username</p>
             <img src={IconUser} />
+            
           </div>
         )}
         <ToastContainer

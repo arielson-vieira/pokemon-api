@@ -10,6 +10,8 @@ export const AuthProvider = (props) => {
   const [userUnregistered, setUserUnregistered] = useState(true);
   const [userRegisterDone, setUserRegisterDone] = useState();
 
+  const [time, setTime] = useState();
+
   return (
     <AuthContext.Provider
       value={{
@@ -21,6 +23,8 @@ export const AuthProvider = (props) => {
         setUserRegisterDone,
         userUnregistered,
         setUserUnregistered,
+        time,
+        setTime,
       }}
     >
       {props.children}

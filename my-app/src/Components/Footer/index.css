@@ -48,7 +48,7 @@
 }
 
 .nameRight a:hover {
-    color: rgb(0, 201, 169);
+    color: rgb(252,201,133);
     text-decoration: wavy;
     border-radius: 10px;
 }
@@ -67,7 +67,7 @@
 }
 
 .nameLeft a:hover {
-    color: rgb(0, 201, 169);
+    color:rgb(252,201,133);
 }
 
 .iconFooter img {

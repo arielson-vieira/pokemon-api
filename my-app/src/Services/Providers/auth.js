@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export const AuthContext = React.createContext({});
 
@@ -6,13 +6,9 @@ export const AuthProvider = (props) => {
   const [userPublic, setUserPublic] = useState(true);
 
   const [userConnect, setUserConnect] = useState();
-  // useEffect(() => {
-  //   setUserConnect(false);
-  // }, []);
 
   const [userUnregistered, setUserUnregistered] = useState(true);
   const [userRegisterDone, setUserRegisterDone] = useState();
- 
 
   return (
     <AuthContext.Provider

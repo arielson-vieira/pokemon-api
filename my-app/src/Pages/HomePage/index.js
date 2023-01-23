@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
@@ -18,8 +18,8 @@ const HomePage = () => {
       
       <div className="infoMain">
         <h1>
-          POKEMON<span> Origins</span>
-        </h1>
+          POKEMON</h1><h2> Origins</h2>
+        
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

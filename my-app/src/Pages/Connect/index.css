@@ -226,3 +226,18 @@
 .userConnected button:hover {
     color: lightcoral;
 }
+
+.forgotPassword button {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: transparent;
+    color: rgb(252, 201, 65);
+    border: none;
+    padding: 10px;
+}
+
+.forgotPassword button:hover {
+    color: lightcoral;
+}

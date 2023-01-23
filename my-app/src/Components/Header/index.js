@@ -14,7 +14,7 @@ import { useAuth } from "../../Services/Providers/auth";
 const Header = (params) => {
   const { userConnect, setUserConnect } = useAuth();
 
-  const {userPublic, setUserPublic} = useAuth();
+  const { userPublic, setUserPublic } = useAuth();
 
   const navigate = useNavigate();
 
@@ -62,11 +62,7 @@ const Header = (params) => {
         <Link to="/" onClick={goToTop}>
           FILMES
         </Link>
-        <Link to="/" onClick={goToTop}>
-          WALLPAPPERS
-        </Link>
       </div>
-
       <div className="iconsRight">
         <div className="group">
           <svg className="iconInput" aria-hidden="true" viewBox="0 0 24 24">
@@ -76,7 +72,7 @@ const Header = (params) => {
           </svg>
           <input placeholder="Pesquisar" type="search" class="inputSearch" />
         </div>
-         {userPublic && (
+        {userPublic && (
           <>
             <button onClick={goToConnect}>
               <span className="buttonsHome">CONECTAR</span>

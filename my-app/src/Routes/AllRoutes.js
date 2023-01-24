@@ -15,7 +15,7 @@ const AllRoutes = () => (
       <Route exact path="/registro" element={<Register />} />
       <Route exact path="/pokemons" element={<AllPokemons />} />
       <Route exact path="/conectar" element={<Connect />} />
-      <Route exact path="/error404" element={<Page404 />} />
+      <Route exact path="*" element={<Page404 />} />
     </Routes>
   </Router>
 );

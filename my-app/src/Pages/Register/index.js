@@ -64,14 +64,13 @@ const Register = () => {
     <div className="register">
       <Header />
       <div className="registerData">
-        {userUnregistered && <div className="formData">
+        {userUnregistered && <div className="formLocation">
           <Form/>
           </div>}
         {userRegisterDone && (
           <div className="registerDone">
             <p>Cadastro realizado, bem-vindo!</p>
-            <p>Você será redirecionado em... </p>
-            <img src={LoginSucess} />
+            <p>Você será redirecionado em...{time} </p>
           </div>
         )}
       </div>

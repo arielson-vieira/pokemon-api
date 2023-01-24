@@ -1,0 +1,62 @@
+.formContent {
+    height: 600;
+    display: flex;
+    flex-direction: column;
+    max-width: 36%;
+    margin-left: 40px;
+    border-radius: 20px;
+    background-color: rgba(12, 9, 177, 0.856);
+    margin: 30px 30px;
+}
+
+
+.formContainer input {
+    height: 30px;
+    padding: 0 10em 0 0;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: rgb(0, 201, 169);
+    border-radius: 10px;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+
+.formContainer ::placeHolder {
+    display: flex;
+    align-items: baseline;
+    align-self: baseline;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 12px;
+}
+
+.buttonSubmitRegister {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.buttonSubmitRegister button {
+    border: 1px solid rgb(210, 116, 61);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(210, 116, 61);
+    padding: 10px 14px;
+    font-size: 17px;
+}
+
+.buttonSubmitRegister button:hover {
+    background-color: rgb(210, 116, 61);
+    color: white;
+    border: 1px solid rgb(210, 116, 61);
+}
+
+.formLabel {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 15px;
+    color: rgb(252, 201, 65);
+}

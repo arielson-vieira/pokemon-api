@@ -38,19 +38,19 @@ const HomePage = () => {
         <div className="buttonInitial">
           <button
             type="button"
-            class="btn cube cube-hover"
+            className="btn cube cube-hover"
             onClick={goToAllPokemons}
           >
-            <div class="bg-top">
-              <div class="bg-inner"></div>
+            <div className="bg-top">
+              <div className="bg-inner"></div>
             </div>
-            <div class="bg-right">
-              <div class="bg-inner"></div>
+            <div className="bg-right">
+              <div className="bg-inner"></div>
             </div>
-            <div class="bg">
-              <div class="bg-inner"></div>
+            <div className="bg">
+              <div className="bg-inner"></div>
             </div>
-            <div class="text">Iniciar aventura!</div>
+            <div className="text">Iniciar aventura!</div>
           </button>
         </div>
       </div>

@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./index.css";
 import { useAuth } from "../../Services/Providers/auth";
 import Footer from "../../Components/Footer";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import Header from "../../Components/Header";
 
 const Connect = () => {
   const [login, setLogin] = useState("");
   const [senha, setSenha] = useState("");
-
   const { userConnect, setUserConnect } = useAuth();
   const { userPublic, setUserPublic } = useAuth();
 
@@ -35,7 +34,7 @@ const Connect = () => {
   return (
     <div className="pageConnect">
       <Header />
-      <div className="formContainer">
+      <div className="connectContainer">
         <div className="connect">
           <form>
             <div className="inputConnect">

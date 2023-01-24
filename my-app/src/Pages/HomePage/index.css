@@ -63,7 +63,7 @@
 .btn {
     display: block;
     padding: 0.7em 1em;
-    background: transparent;
+    background-color: transparent;
     outline: none;
     border: 0;
     color: #d4af37;
@@ -137,7 +137,7 @@
 }
 
 .cube:hover .bg-inner {
-    background: #d4af37;
+    background-color: #d4af37;
     transition: all 0.4s;
 }
 
@@ -149,7 +149,7 @@
 .cube:hover .bg-right,
 .cube:hover .bg,
 .cube:hover .bg-top {
-    background: #28282d;
+    background-color: #28282d;
 }
 
 .cube:active {

@@ -12,6 +12,8 @@ export const AuthProvider = (props) => {
 
   const [time, setTime] = useState();
 
+  const [formData, setFormData] = useState({});
+
   return (
     <AuthContext.Provider
       value={{
@@ -25,6 +27,8 @@ export const AuthProvider = (props) => {
         setUserUnregistered,
         time,
         setTime,
+        formData,
+        setFormData,
       }}
     >
       {props.children}

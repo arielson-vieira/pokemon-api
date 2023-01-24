@@ -12,12 +12,18 @@
 .page404Container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-items: center;
     width: 100%;
     min-height: 100vh;
+    background-color: blue;
 }
 
 .page404Container p {
     margin-top: 30px;
+    max-width: 100%;
     color: red;
     display: flex;
     flex-direction: column;
@@ -26,5 +32,7 @@
     font-family: 'Carter One', Times, serif;
     max-width: 30%;
     position: sticky;
-    top:100px
+    top:100px;
+    background-color: white;
+    
 }

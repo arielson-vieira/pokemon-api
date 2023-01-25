@@ -133,37 +133,6 @@ const Forms = () => {
           </Form>
         )}
       </Formik>
-      {/* <Formik
-                initialValues={{ name: '', email: '', password: '' }}
-                validationSchema={Yup.object({
-                    name: Yup.string()
-                        .required('Name is required'),
-                    email: Yup.string()
-                        .email('Invalid email address')
-                        .required('Email is required'),
-                    password: Yup.string()
-                        .min(8, 'Password must be at least 8 characters')
-                        .required('Password is required')
-                })}
-                onSubmit={userRegister}
-            >
-                {({ isSubmitting }) => (
-                    <Form>
-                        <Field name="name" type="text" placeholder="Name" />
-                        <ErrorMessage name="name" component="div" />
-
-                        <Field name="email" type="email" placeholder="Email" />
-                        <ErrorMessage name="email" component="div" />
-
-                        <Field name="password" type="password" placeholder="Password" />
-                        <ErrorMessage name="password" component="div" />
-
-                        <button type="submit" disabled={isSubmitting}>
-                            Submit
-                        </button>
-                    </Form>
-                )}
-            </Formik> */}
     </div>
   );
 };

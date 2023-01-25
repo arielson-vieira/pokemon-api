@@ -58,7 +58,7 @@ const Header = (params) => {
         <Link to="/" onClick={goToTop}>
           HOME
         </Link>
-        <Link to="/" onClick={goToTop}>
+        <Link to="/" onClick={goToTop} className='hiddenMobile'>
           FILMES
         </Link>
         {userConnect &&(

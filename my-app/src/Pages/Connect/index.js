@@ -5,6 +5,7 @@ import Footer from "../../Components/Footer";
 import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { Link} from "react-router-dom";
 
 import Header from "../../Components/Header";
 
@@ -33,13 +34,12 @@ const Connect = () => {
   useEffect(() => {
     goToTop();
   }, []);
-
-  const userLogin = (values, { setSubmitting }) => {
+                                                                                      
+  const userLogin = (values) => {
     setFormData(values);
     localStorage.setItem("formData", JSON.stringify(values));
-    setSubmitting(false);
     setUserConnect(true);
-    setUserPublic(false);
+    setUserPublic();
     navigate("/");
   };
 
@@ -97,6 +97,9 @@ const Connect = () => {
                 </div>
                 <div className="forgotPassword">
                   <button>Esqueceu a senha?</button>
+                </div>
+                <div className="createAccount">
+                  <Link to="/registro">Cadastre-se</Link>
                 </div>
               </Form>
             </div>

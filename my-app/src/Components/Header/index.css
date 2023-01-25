@@ -1,399 +1,348 @@
 .header {
-       display: flex;
-       background-color:rgb(209,116,61);
-       height: 100px;
-       width: 100%;
-       align-items: center;
-       justify-content: space-between;
-       padding: 0 20px;
-       color: white;
-       text-decoration: none;
-       transition: all 0.5s;
-       font-family: 'Roboto', sans-serif, Times;
-       position: sticky;
-       top: 0;
-       z-index: 100;
+  display: flex;
+  background-color: rgb(209, 116, 61);
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-family: "Roboto", sans-serif, Times;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .iconsLeft {
-       display: flex;
-       padding: 0 10px;
+  display: flex;
+  padding: 0 10px;
 }
 
 .iconsLeft a {
-       font-size: 20px;
-       padding: 0 16px;
-       text-decoration: none;
-       transition: all 0.5s;
-       justify-content: center;
-       padding-top: 8px;
-       color: inherit;
+  font-size: 20px;
+  padding: 0 16px;
+  text-decoration: none;
+  transition: all 0.5s;
+  justify-content: center;
+  padding-top: 8px;
+  color: inherit;
 }
 
 .iconsLeft a:hover {
-       transform: scale(1.3);
-       -webkit-transform: scale(1.3);
-       /* color: rgb(0, 201, 169); */
-       color: black;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  /* color: rgb(0, 201, 169); */
+  color: black;
 }
 
 .iconsLeft img {
-       height: 40px;
+  height: 40px;
 }
 
 .iconsLeft img:hover {
-       transform: scale(1.2);
-       -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }
 
 .iconsRight {
-       display: flex;
-       align-items: center !important;
-       padding: 0 10px;
+  display: flex;
+  align-items: center !important;
+  padding: 0 10px;
 }
 
 .iconsRight button {
-       color: white;
-       text-decoration: none;
-       cursor: pointer;
-       outline: none;
-       border: none;
-       background-color: transparent;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
 .group {
-       display: flex;
-       line-height: 28px;
-       align-items: center;
-       position: relative;
-       max-width: 190px;
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
 }
 
 .inputSearch {
-       height: 30px;
-       line-height: 28px;
-       padding: 0 1rem;
-       width: 100%;
-       padding-left: 2.5rem;
-       border: 2px solid transparent;
-       border-radius: 10px;
-       outline: none;
-       background-color: #D9E8D8;
-       color: #0d0c22;
-       transition: .3s ease;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 1rem;
+  width: 100%;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background-color: #d9e8d8;
+  color: #0d0c22;
+  transition: 0.3s ease;
 }
 
 .inputSearch input::placeholder input {
-       color: #777;
-
+  color: #777;
 }
 
 .iconInput {
-       position: absolute;
-       left: 1rem;
-       fill: red;
-       width: 1rem;
-       height: 1rem;
+  position: absolute;
+  margin: 5px 5px;
+  left: 1rem;
+  fill: red;
+  width: 1rem;
+  height: 1rem;
 }
 
 .buttonsHome {
-       width: 140px;
-       height: auto;
-       float: left;
-       transition: .5s linear;
-       position: relative;
-       display: block;
-       overflow: hidden;
-       padding: 15px;
-       text-align: center;
-       margin: 0 5px;
-       background-color: transparent;
-       text-transform: uppercase;
-       font-weight: 900;
+  width: 140px;
+  height: auto;
+  float: left;
+  transition: 0.5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 .buttonsHome:before {
-       position: absolute;
-       content: '';
-       left: 0;
-       bottom: 0;
-       height: 4px;
-       width: 100%;
-       border-bottom: 4px solid transparent;
-       border-left: 4px solid transparent;
-       box-sizing: border-box;
-       transform: translateX(100%);
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
 }
 
 .buttonsHome:after {
-       position: absolute;
-       content: '';
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 4px;
-       border-top: 4px solid transparent;
-       border-right: 4px solid transparent;
-       box-sizing: border-box;
-       transform: translateX(-100%);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
 }
 
 .buttonsHome:hover {
-       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .buttonsHome:hover:before {
-       border-color: black;
-       height: 100%;
-       transform: translateX(0);
-       transition: .3s transform linear, .3s height linear .3s;
+  border-color: black;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
 }
 
 .buttonsHome:hover:after {
-       border-color: black;
-       height: 100%;
-       transform: translateX(0);
-       transition: .3s transform linear, .3s height linear .5s;
+  border-color: black;
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.5s;
 }
 
 .userConnected {
-       display: flex;
-       align-items: center;
-       align-self: center;
-       align-content: center;
-       justify-content: center;
-       justify-items: center;
-       justify-self: center;
-       color: black;
-       margin-left: 30px;
+  display: flex;
+  align-items: center;
+  color: black;
+  margin-left: 30px;
 }
 
 .userConnected p {
-       font-size: 15px;
-       color: black;
-       margin: 30px 15px;
+  font-size: 15px;
+  color: black;
+  margin: 30px 15px;
 }
 
 .userConnected img {
-       max-height: 60px;
-       border-radius: 10px;
-       border-style: double;
-       border-color: black;
+  max-height: 60px;
+  border-radius: 10px;
+  border-style: double;
+  border-color: black;
 }
 
 .userConnected button {
-       font-family: sans-serif, Arial, Helvetica;
-       font-size: 13px;
-       font-weight: bold;
-       margin-top: 20px;
-       background-color: transparent;
-       border: none;
-       padding: 10px;
-   }
-   
-   .userConnected button:hover {
-       color: lightcoral;
-   }
-   
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.userConnected button:hover {
+  color: lightcoral;
+}
+
 /* mobile */
 
-   @media (min-width: 280px) and (max-width: 821px) {
-       .header {
-              display: flex;
-              background-color:rgb(209,116,61);
-              height: 100px;
-              width: 100%;
-              align-items: center;
-              justify-content: space-between;
-              padding: 0 20px;
-              color: white;
-              text-decoration: none;
-              transition: all 0.5s;
-              font-family: 'Roboto', sans-serif, Times;
-              position: sticky;
-              top: 0;
-              z-index: 100;
-       }
-       
-       .iconsLeft {
-              display: flex;
-              padding: 0 10px;
-       }
-       
-       .iconsLeft a {
-              font-size: 20px;
-              padding: 0 16px;
-              text-decoration: none;
-              transition: all 0.5s;
-              justify-content: center;
-              padding-top: 8px;
-              color: inherit;
-       }
-       
-       .iconsLeft a:hover {
-              transform: scale(1.3);
-              -webkit-transform: scale(1.3);
-              /* color: rgb(0, 201, 169); */
-              color: black;
-       }
-       
-       .iconsLeft img {
-              height: 40px;
-       }
-       
-       .iconsLeft img:hover {
-              transform: scale(1.2);
-              -webkit-transform: scale(1.2);
-       }
-       
-       .iconsRight {
-              display: flex;
-              align-items: center !important;
-              padding: 0 10px;
-       }
-       
-       .iconsRight button {
-              color: white;
-              text-decoration: none;
-              cursor: pointer;
-              outline: none;
-              border: none;
-              background-color: transparent;
-       }
-       
-       .group {
-              display: flex;
-              line-height: 28px;
-              align-items: center;
-              position: relative;
-              max-width: 190px;
-       }
-       
-       .inputSearch {
-              height: 30px;
-              line-height: 28px;
-              padding: 0 1rem;
-              width: 100%;
-              padding-left: 2.5rem;
-              border: 2px solid transparent;
-              border-radius: 10px;
-              outline: none;
-              background-color: #D9E8D8;
-              color: #0d0c22;
-              transition: .3s ease;
-       }
-       
-       .inputSearch input::placeholder input {
-              color: #777;
-       
-       }
-       
-       .iconInput {
-              position: absolute;
-              left: 1rem;
-              fill: red;
-              width: 1rem;
-              height: 1rem;
-       }
-       
-       .buttonsHome {
-              width: 140px;
-              height: auto;
-              float: left;
-              transition: .5s linear;
-              position: relative;
-              display: block;
-              overflow: hidden;
-              padding: 15px;
-              text-align: center;
-              margin: 0 5px;
-              background-color: transparent;
-              text-transform: uppercase;
-              font-weight: 900;
-       }
-       
-       .buttonsHome:before {
-              position: absolute;
-              content: '';
-              left: 0;
-              bottom: 0;
-              height: 4px;
-              width: 100%;
-              border-bottom: 4px solid transparent;
-              border-left: 4px solid transparent;
-              box-sizing: border-box;
-              transform: translateX(100%);
-       }
-       
-       .buttonsHome:after {
-              position: absolute;
-              content: '';
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 4px;
-              border-top: 4px solid transparent;
-              border-right: 4px solid transparent;
-              box-sizing: border-box;
-              transform: translateX(-100%);
-       }
-       
-       .buttonsHome:hover {
-              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-       }
-       
-       .buttonsHome:hover:before {
-              border-color: black;
-              height: 100%;
-              transform: translateX(0);
-              transition: .3s transform linear, .3s height linear .3s;
-       }
-       
-       .buttonsHome:hover:after {
-              border-color: black;
-              height: 100%;
-              transform: translateX(0);
-              transition: .3s transform linear, .3s height linear .5s;
-       }
-       
-       .userConnected {
-              display: flex;
-              align-items: center;
-              align-self: center;
-              align-content: center;
-              justify-content: center;
-              justify-items: center;
-              justify-self: center;
-              color: black;
-              margin-left: 30px;
-       }
-       
-       .userConnected p {
-              font-size: 15px;
-              color: black;
-              margin: 30px 15px;
-       }
-       
-       .userConnected img {
-              max-height: 60px;
-              border-radius: 10px;
-              border-style: double;
-              border-color: black;
-       }
-       
-       .userConnected button {
-              font-family: sans-serif, Arial, Helvetica;
-              font-size: 13px;
-              font-weight: bold;
-              margin-top: 20px;
-              background-color: transparent;
-              border: none;
-              padding: 10px;
-          }
-          
-          .userConnected button:hover {
-              color: lightcoral;
-          }
-       
-   }
-   
+@media (min-width: 280px) and (max-width: 821px) {
+  .header {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-family: "Roboto", sans-serif, Times;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .iconsLeft {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.5s;
+    font-family: "Rubik Mono One", "Times New Roman", Times, serif;
+  }
+
+  .iconsLeft a:hover {
+    transform: none;
+    -webkit-transform: none;
+    color: black;
+  }
+
+  .iconsLeft img {
+    height: 50px;
+  }
+
+  .iconsLeft img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+  }
+
+  .iconsRight {
+    display: flex;
+    align-items: center !important;
+    padding: 0 10px;
+  }
+
+  .iconsRight button {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  .group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+  }
+
+  .buttonsHome {
+    width: 120px;
+    height: auto;
+    float: left;
+    transition: 0.5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    margin: 0 1px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  .buttonsHome:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+
+  .buttonsHome:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+
+  .buttonsHome:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .buttonsHome:hover:before {
+    border-color: black;
+    height: 100%;
+    transform: translateX(0);
+    transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  }
+
+  .buttonsHome:hover:after {
+    border-color: black;
+    height: 100%;
+    transform: translateX(0);
+    transition: 0.3s transform linear, 0.3s height linear 0.5s;
+  }
+
+  .userConnected {
+    color: black;
+    margin: 0 0 0 1em;
+  }
+
+  .userConnected p {
+    font-size: 10px;
+    color: black;
+    margin: 30px 5px;
+  }
+
+  .userConnected img {
+    min-height: 60px;
+    border-radius: 10px;
+    border-style: double;
+    border-color: black;
+  }
+
+  .userConnected button {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+  }
+
+  .userConnected button:hover {
+    color: lightcoral;
+  }
+}

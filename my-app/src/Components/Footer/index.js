@@ -3,8 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 
 import "./index.css";
 import iconPokemon from "../../Assets/Icon/iconPikachu.png";
+import { useAuth } from "../../Services/Providers/auth";
+
 
 const Footer = () => {
+  const { userConnect, setUserConnect } = useAuth();
+
+  const { userPublic, setUserPublic } = useAuth();
   const navigate = useNavigate();
 
   function goToTop() {
@@ -27,15 +32,14 @@ const Footer = () => {
             Pokemon Origins
           </Link>
         </div>
-        <div className="iconFooter" onClick={goToHome}>
-          <img src={iconPokemon} alt="" />
+        <div className="hiddenMobile">
+          <div className="iconFooter" onClick={goToHome}>
+            <img src={iconPokemon} alt="" />
+          </div>
         </div>
         <div className="nameRight">
-          <Link to="/pokemons">Pokemons</Link>
+        {userConnect && <Link to="/pokemons">Pokemons</Link>}
           <Link to="/"> Filmes</Link>
-          <Link to="https://www.google.com/search?q=pokemon+wallpaper+4k&tbm=isch&ved=2ahUKEwih5qvj0cz8AhXwBLkGHbgPDwUQ2-cCegQIABAA&oq=pokemon+wallpaper+4k&gs_lcp=CgNpbWcQAzIECCMQJzIICAAQgAQQsQMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoGCAAQCBAeUNsJWKsPYNITaABwAHgAgAFziAG9A5IBAzAuNJgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=lYzFY-HHOfCJ5OUPuJ-8KA&bih=800&biw=1440">
-            Wallpappers
-          </Link>
         </div>
       </div>
 

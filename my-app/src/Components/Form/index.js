@@ -46,8 +46,6 @@ const Forms = () => {
     setFormData(values);
     localStorage.setItem("formData", JSON.stringify(values));
     setSubmitting(false);
-    console.log("hit", values);
-    console.log("asd", setSubmitting);
     setUserRegisterDone(true);
     setUserUnregistered(false);
     setTime(3);

@@ -6,28 +6,15 @@
     z-index: 1;
 }
 
-.inputConnect {
-    display: flex;
-    position: relative;
-    width: 196px;
-    margin-bottom: 15px;
-}
-
-.inputConnect  {
-    display: flex;
-    flex-direction: column;
-    /* position: relative; */
-    width: 100%;
+.formConnect label {
     padding: 20px 10px 10px;
-    background-color: transparent;
-    outline: none;
-    box-shadow: none;
-    border: none;
-    color: #23242a;
-    font-size: 1em;
-    letter-spacing: 0.05em;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(252, 201, 65);
+    letter-spacing: 00.05em;
     transition: 0.5s;
-    z-index: 10;
+    pointer-events: none;
 }
 
 .connectContainer {
@@ -37,20 +24,26 @@
     background-size: cover;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-}
+    justify-content: flex-end;
+   }
 
-.connect {
+.formConnect {
     display: flex;
-    flex-direction: column;
-    height: 350px;
+    flex-direction: column;    height: 360px;
     align-items: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
     border-radius: 20px;
-    background-color: rgba(17, 14, 187, 0.3);
-    margin-top: 30px;
-   flex-direction: column;
-    align-self: flex-end;
-    margin-right: 40px;
+    background-color: rgba(23, 20, 230, 0.986);
+    margin: 20px 30px 0 0;
+    }
+
+.formConnect input {
+    display: flex;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: rgb(252, 201, 65);;
 }
 
 .allButtonConnect button {
@@ -66,6 +59,11 @@
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.2s;
+}
+.errorMessageConnect {
+    color: red;
+    font-size: 12px;
+
 }
 
 .buttonConnect button span {
@@ -113,3 +111,19 @@
     align-self: center;
     margin-top: 30px;
 }
+
+.forgotPassword button {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: transparent;
+    color: rgb(252, 201, 65);
+    border: none;
+    padding: 10px;
+}
+
+.forgotPassword button:hover {
+    color: lightcoral;
+}
+

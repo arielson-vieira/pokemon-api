@@ -34,11 +34,6 @@ const Connect = () => {
     goToTop();
   }, []);
 
-  // function userLogin(e) {
-  //   setUserConnect(true);
-  //   setUserPublic(false);
-  //   navigate("/");
-  // }
   const userLogin = (values, { setSubmitting }) => {
     setFormData(values);
     localStorage.setItem("formData", JSON.stringify(values));
@@ -61,61 +56,50 @@ const Connect = () => {
       >
         {({ errors, touched }) => (
           <div className="connectContainer">
-            {/* <div className="connect"> */}
-            <Form className={"connect"}>
-              <div className="inputConnect">
-                <Field
-                  name="login"
-                  // placeholder="Insira o seu login"
-                  className="inputConnect2"
-                />
-                <ErrorMessage
-                  name="login"
-                  component="div"
-                  className="errorMessage"
-                />
-                <span>Login</span>
-                <i></i>
-              </div>
-              <div className="inputPassword">
-                <Field
-                  name="password"
-                  type="password"
-                  // placeholder="Digite a sua senha."
-                  className="inputPassword2"
-                />
-                <ErrorMessage
-                  name="password"
-                  component="div"
-                  className="errorMessage"
-                />
-                <span>Senha</span>
-                <i></i>
-              </div>
-              <div className="allButtonConnect">
-                <button onSubmit={""} onClick={userLogin}>
-                  <div className="buttonConnect">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                    >
-                      <path fill="none" d="M0 0h24v24H0z"></path>
-                      <path
-                        fill="currentColor"
-                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>Logar</span>
-                </button>
-              </div>
-              <div className="forgotPassword">
-                <button>Esqueceu a senha?</button>
-              </div>
-            </Form>
-            {/* </div> */}
+            <div>
+              <Form className={"formConnect"}>
+                <div>
+                  <label className="labelConnect">Login</label>
+                  <Field name="login" />
+                  <ErrorMessage
+                    name="login"
+                    component="div"
+                    className="errorMessageConnect"
+                  />
+                </div>
+                <div>
+                  <label className="labelConnect">Senha</label>
+                  <Field name="password" type="password" />
+                  <ErrorMessage
+                    name="password"
+                    component="div"
+                    className="errorMessageConnect"
+                  />
+                </div>
+                <div className="allButtonConnect">
+                  <button onSubmit={""} onClick={userLogin}>
+                    <div className="buttonConnect">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          fill="currentColor"
+                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span>Logar</span>
+                  </button>
+                </div>
+                <div className="forgotPassword">
+                  <button>Esqueceu a senha?</button>
+                </div>
+              </Form>
+            </div>
           </div>
         )}
       </Formik>

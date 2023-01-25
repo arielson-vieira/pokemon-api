@@ -1,43 +1,129 @@
 .footerContainer {
-    display: flex;
-    flex-direction: column;
-    background-color: #1c232e;
-    width: 100%;
-    color: white;
-    padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1c232e;
+  width: 100%;
+  color: white;
+  padding-top: 20px;
 }
 
 .copyright footer {
-    display: flex;
-    font-size: 15px;
+  display: flex;
+  font-size: 15px;
 
-    font-family: 'Roboto', sans-serif, Times;
-    margin-top: 80px;
-    padding-left: 20px;
+  font-family: "Roboto", sans-serif, Times;
+  margin-top: 80px;
+  padding-left: 20px;
 }
 
 .copyright {
-    justify-content: baseline;
+  justify-content: baseline;
 }
 
 .containerInfo {
-    display: flex;
+  display: flex;
 }
 
 .containerInfo a {
-    display: flex;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif, Times;
-    background-color: b;
+  display: flex;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif, Times;
+  background-color: b;
 }
 
 .nameRight {
-    display: flex;
-    width: 80%;
-    justify-content: flex-end;
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
 }
 
 .nameRight a {
+  display: flex;
+  text-decoration: none;
+  padding: 10px 30px 0 0;
+  font-size: 20px;
+  color: white;
+  transition: all 0.5s;
+  justify-items: center;
+}
+
+.nameRight a:hover {
+  color: rgb(252, 201, 133);
+  text-decoration: wavy;
+  border-radius: 10px;
+}
+
+.nameLeft {
+  display: flex;
+  width: 20%;
+}
+
+.nameLeft a {
+  display: flex;
+  text-decoration: none;
+  padding-left: 20px;
+  color: white;
+  font-family: "Carter One", "Times New Roman", Times, serif;
+}
+
+.nameLeft a:hover {
+  color: rgb(252, 201, 133);
+}
+
+.iconFooter img {
+  display: flex;
+  height: 40px;
+}
+
+.iconFooter img:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+}
+
+/* mobile */
+
+@media (min-width: 280px) and (max-width: 821px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c232e;
+    width: 100vw;
+    color: white;
+    padding-top: 20px;
+  }
+
+  .copyright footer {
+    display: flex;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif, Times;
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: yellow;
+    margin-bottom: 10px;
+  }
+
+  .containerInfo {
+    display: flex;
+  }
+
+  .containerInfo a {
+    display: flex;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif, Times;
+    background-color: b;
+  }
+
+  .nameRight {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+  }
+
+  .nameRight a {
     display: flex;
     text-decoration: none;
     padding: 10px 30px 0 0;
@@ -45,37 +131,38 @@
     color: white;
     transition: all 0.5s;
     justify-items: center;
-}
+  }
 
-.nameRight a:hover {
-    color: rgb(252,201,133);
+  .nameRight a:hover {
+    color: rgb(252, 201, 133);
     text-decoration: wavy;
     border-radius: 10px;
-}
+  }
 
-.nameLeft {
+  .nameLeft {
     display: flex;
     width: 20%;
-}
+  }
 
-.nameLeft a {
+  .nameLeft a {
     display: flex;
     text-decoration: none;
     padding-left: 20px;
     color: white;
-    font-family: 'Carter One', 'Times New Roman', Times, serif;
-}
+    font-family: "Carter One", "Times New Roman", Times, serif;
+  }
 
-.nameLeft a:hover {
-    color:rgb(252,201,133);
-}
+  .nameLeft a:hover {
+    color: rgb(252, 201, 133);
+  }
 
-.iconFooter img {
+  .iconFooter img {
     display: flex;
     height: 40px;
-}
+  }
 
-.iconFooter img:hover {
+  .iconFooter img:hover {
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
+  }
 }

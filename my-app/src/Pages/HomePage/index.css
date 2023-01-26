@@ -173,6 +173,7 @@
     align-items: baseline;
     width: 100vw;
     background-color: black;
+    overflow-x: hidden
   }
 
   .infoMain h1 {

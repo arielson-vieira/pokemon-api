@@ -1,6 +1,7 @@
 .cardModel {
   height: 100vh;
   display: flex;
+  overflow-x: hidden;
 }
 
 .image img {
@@ -16,7 +17,7 @@
 
 .id {
   width: 100%;
-  font-family: 'Carter One', Times, serif;
+  font-family: "Carter One", Times, serif;
   font-size: 25px;
   display: flex;
   flex-direction: column;
@@ -26,9 +27,9 @@
 }
 
 .nameCard {
-  font-family: 'Seymour One', sans-serif;
+  font-family: "Seymour One", sans-serif;
   font-size: 25px;
-  background-color:black;
+  background-color: black;
   color: white;
   border-radius: 50px;
 }
@@ -121,4 +122,135 @@
   max-height: 23px;
   min-height: 23px;
   margin-right: 5px;
+}
+
+/* mobile */
+
+@media (min-width: 280px) and (max-width: 821px) {
+  .cardModel {
+    height: 100vh;
+    display: flex;
+    color: red;
+    background-color: red;
+  }
+
+  .image img {
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 170px;
+    min-height: 170px;
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+    background-color: black;
+  }
+
+  .id {
+    width: 100%;
+    font-family: "Carter One", Times, serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    color: black;
+    padding: 20px 0 0 20px;
+  }
+
+  .nameCard {
+    font-family: "Seymour One", sans-serif;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+  }
+
+  .positionNameCard {
+    width: 100%;
+  }
+
+  .height {
+    color: black;
+    font-size: 17px;
+    display: flex;
+    max-height: 30px;
+    justify-content: space-between;
+  }
+
+  .height p {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: baseline;
+    margin: 0 0;
+    width: 57%;
+  }
+
+  .weight {
+    color: black;
+    font-size: 17px;
+    display: flex;
+    max-height: 30px;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  .weight p {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: baseline;
+    margin: 0 0px;
+    width: 57%;
+  }
+
+  .power {
+    color: black;
+    font-size: 17px;
+    display: flex;
+    max-height: 30px;
+    justify-content: space-between;
+  }
+
+  .power p {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: baseline;
+    margin: 0 0px;
+    width: 57%;
+  }
+
+  .type {
+    color: black;
+    font-size: 30px;
+  }
+
+  .type img {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    min-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .powerCardIcon img {
+    max-height: 23px;
+    min-height: 23px;
+    margin-right: 5px;
+  }
+
+  .heightCardIcon img {
+    max-height: 23px;
+    min-height: 23px;
+    margin-right: 5px;
+  }
+
+  .weightCardIcon img {
+    max-height: 23px;
+    min-height: 23px;
+    margin-right: 5px;
+  }
 }

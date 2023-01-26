@@ -25,7 +25,6 @@ import IconRock from "../../Assets/Icon/iconRock.png";
 import IconDragon from "../../Assets/Icon/iconDragon.png";
 import IconDark from "../../Assets/Icon/iconDark.png";
 import IconGhost from "../../Assets/Icon/iconGhost.png";
-
 import IconPower from "../../Assets/Icon/iconPower.png";
 import IconHeight from "../../Assets/Icon/iconHeight.png";
 import IconWeight from "../../Assets/Icon/iconWeight.png";
@@ -246,14 +245,14 @@ export default function CardHomePage({
   return (
     <Card
       sx={{
-        maxWidth: "300px",
-        minWidth: "300px",
+        maxWidth: "330px",
+        minWidth: "330px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         maxHeight: "420px",
         minHeight: "4px",
-        backgroundColor: "white",
+        backgroundColor: "wheat",
         textAlign: "center",
         alignItems: "center",
         border: "solid",

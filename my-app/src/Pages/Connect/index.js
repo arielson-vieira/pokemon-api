@@ -24,6 +24,14 @@ const Connect = () => {
       .required("Senha é obrigatória"),
   });
 
+  const userLogin = (values) => {
+    setFormData(values);
+    localStorage.setItem("formData", JSON.stringify(values));
+    setUserConnect(true);
+    setUserPublic();
+    navigate("/");
+  };
+
   function goToTop() {
     window.scrollTo({
       top: 0,
@@ -34,14 +42,6 @@ const Connect = () => {
   useEffect(() => {
     goToTop();
   }, []);
-
-  const userLogin = (values) => {
-    setFormData(values);
-    localStorage.setItem("formData", JSON.stringify(values));
-    setUserConnect(true);
-    setUserPublic();
-    navigate("/");
-  };
 
   return (
     <div className="pageConnect">

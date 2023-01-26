@@ -67,6 +67,7 @@
 @media (min-width: 280px) and (max-width: 821px) {
   .formContent {
     max-width: 100vh;
+    height: 100vh;
     border-radius: 20px;
     background-color: initial;
     margin: 0px 0px;

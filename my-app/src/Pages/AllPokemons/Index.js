@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "./index.css";
 
 import api from "../../Services/Api/api";
@@ -16,19 +16,7 @@ const AllPokemons = () => {
 
   const [loading, setLoading] = useState(true);
 
-  function goToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
-
-  useEffect(() => {
-    getAll("pokemon/");
-    goToTop()
-  }, []);
-
-  function getAll(url) {
+  const getAll = useCallback((url) => {
     api
       .get(url)
       .then((response) => {
@@ -49,7 +37,19 @@ const AllPokemons = () => {
       .catch((err) => {
         console.error("Ocorreu um erro" + err);
       });
+  }, []);
+
+  function goToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
+
+  useEffect(() => {
+    getAll("pokemon/");
+    goToTop();
+  }, [getAll]);
 
   async function getPokemon(url) {
     return api.get(url).then((response) => {

@@ -90,6 +90,8 @@
     width: 100vw;
     color: white;
     padding-top: 20px;
+    overflow-x: hidden
+
   }
 
   .copyright footer {

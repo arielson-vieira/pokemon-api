@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import { useAuth } from "../../Services/Providers/auth";
 import Footer from "../../Components/Footer";
 import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Header from "../../Components/Header";
 
 const Connect = () => {
-  const { userConnect, setUserConnect, formData, setFormData } = useAuth();
-  const { userPublic, setUserPublic } = useAuth();
+  const { setUserConnect, setFormData } = useAuth();
+  const { setUserPublic } = useAuth();
 
   const navigate = useNavigate();
 
@@ -34,7 +34,7 @@ const Connect = () => {
   useEffect(() => {
     goToTop();
   }, []);
-                                                                                      
+
   const userLogin = (values) => {
     setFormData(values);
     localStorage.setItem("formData", JSON.stringify(values));

@@ -67,7 +67,7 @@ const Forms = () => {
         {({ errors, touched }) => (
           <Form className={"formContainer"}>
             <div>
-              <label className="formLabel">Nome</label>
+             <div className="hiddenMobile"><label className="formLabel">Nome</label></div>
               <Field name="name" placeholder="Digite o seu nome." />
               <ErrorMessage
                 name="name"
@@ -76,7 +76,7 @@ const Forms = () => {
               />
             </div>
             <div>
-              <label className="formLabel">E-mail</label>
+           <div className="hiddenMobile"><label className="formLabel">E-mail</label></div>
               <Field
                 name="email"
                 type="email"
@@ -89,7 +89,7 @@ const Forms = () => {
               />
             </div>
             <div>
-              <label className="formLabel">Confirmar e-mail</label>
+             <div className="hiddenMobile"><label className="formLabel">Confirmar e-mail</label></div>
               <Field
                 name="confirmEmail"
                 type="email"
@@ -102,7 +102,7 @@ const Forms = () => {
               />
             </div>
             <div>
-              <label className="formLabel">Senha</label>
+              <div className="hiddenMobile"><label className="formLabel">Senha</label></div>
               <Field
                 name="password"
                 type="password"
@@ -115,7 +115,7 @@ const Forms = () => {
               />
             </div>
             <div>
-              <label className="formLabel">Confirmar senha</label>
+              <div className="hiddenMobile"><label className="formLabel">Confirmar senha</label></div>
               <Field
                 name="confirmPassword"
                 type="password"

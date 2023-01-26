@@ -38,13 +38,60 @@
     margin: 50px 0 0 30px;
 }
 
-.registerDone img {
-    height: 60px;
-    border-radius: 50%;
-}
-
 .registerDone p {
     font-size: 30px;
     color: rgb(252, 201, 65);
     margin-right: 20px;
+}
+
+/* mobile */
+
+@media (min-width: 280px) and (max-width: 821px) {
+    .register {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden
+    }
+    
+    .registerData {
+        min-height: 100vh;
+        background: url('../../Assets/Icon/ashGiff.gif');
+        /* background-size: contain; */
+        /* background-repeat: no-repeat; */
+        /* background-repeat: no-repeat, repeat-x; */
+        background-position: 30%,40% ;
+        background-size: cover;
+    }
+    
+    .formLocation {
+        width: 100vw;
+        background-color: red;
+        position: absolute;
+        background: url('../../Assets/Images/RegisterBackground.jpg');
+        background-size: contain;
+        /* background-repeat: no-repeat; */
+        /* background-repeat: no-repeat, repeat-x; */
+        background-position: top right, center;
+        background-size: cover;
+        background-position: 55% 0px ;
+    }
+    
+    
+    .registerDone {
+        max-height: 300px;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin: 10px 0 0 30px;
+    }
+    
+    .registerDone p {
+        display: flex;
+        flex-direction: column;
+         font-size: 20px;
+        color: yellow;
+        margin: 0 0 0 50px;
+        font-family: "Rubik Mono One", "Times New Roman", Times, serif;
+
+    }
+
 }

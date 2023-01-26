@@ -5,7 +5,7 @@
   max-width: 36%;
   margin-left: 40px;
   border-radius: 20px;
-  background-color: rgba(12, 9, 177, 0.856);
+  background-color: rgba(54, 52, 126, 0.658);
   margin: 30px 30px;
 }
 
@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   height: 30px;
-  padding: 0 10em 0 0;
+  padding: 0 70px;
   border: 2px solid transparent;
   outline: none;
   background-color: rgb(252, 201, 65);
@@ -60,4 +60,61 @@
   font-family: sans-serif, Arial, Helvetica;
   font-size: 15px;
   color: rgb(252, 201, 65);
+}
+
+/* mobile */
+
+@media (min-width: 280px) and (max-width: 821px) {
+  .formContent {
+    max-width: 100vh;
+    border-radius: 20px;
+    background-color: initial;
+    margin: 0px 0px;
+    overflow-x: hidden;
+  }
+
+  .formContainer input {
+    height: 50px;
+    padding: 0 5px;
+    margin: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: rgb(252, 201, 65);
+    border-radius: 10px;
+    color: #0d0c22;
+    transition: 0.3s ease;
+  }
+
+  .formContainer ::placeholder {
+    display: flex;
+    align-items: baseline;
+    align-self: baseline;
+    color: black;
+  }
+
+  .errorMessage {
+    color: yellow;
+    font-size: 13px;
+  }
+
+  .buttonSubmitRegister {
+    display: flex;
+    justify-content: center;
+    margin-top: em;
+  }
+
+  .buttonSubmitRegister button {
+    border: 1px solid rgb(210, 116, 61);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(210, 116, 61);
+    padding: 10px 14px;
+    font-size: 17px;
+  }
+
+  .buttonSubmitRegister button:hover {
+    background-color: rgb(210, 116, 61);
+    color: white;
+    border: 1px solid rgb(210, 116, 61);
+  }
 }

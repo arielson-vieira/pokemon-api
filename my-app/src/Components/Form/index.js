@@ -1,25 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./index.css";
 import { useAuth } from "../../Services/Providers/auth";
 
 const Forms = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const input = document.querySelectorAll("input");
   input.forEach((i) => i.style.setProperty("user-select", "none", "important"));
 
-  const {
-    userUnregistered,
-    setUserUnregistered,
-    setUserRegisterDone,
-    userRegisterDone,
-    time,
-    setTime,
-    formData,
-    setFormData,
-  } = useAuth();
+  const { setUserUnregistered, setUserRegisterDone, setTime, setFormData } =
+    useAuth();
 
   const validationSchema = Yup.object().shape({
     name: Yup.string()
@@ -67,7 +57,9 @@ const Forms = () => {
         {({ errors, touched }) => (
           <Form className={"formContainer"}>
             <div>
-             <div className="hiddenMobile"><label className="formLabel">Nome</label></div>
+              <div className="hiddenMobile">
+                <label className="formLabel">Nome</label>
+              </div>
               <Field name="name" placeholder="Digite o seu nome." />
               <ErrorMessage
                 name="name"
@@ -76,7 +68,9 @@ const Forms = () => {
               />
             </div>
             <div>
-           <div className="hiddenMobile"><label className="formLabel">E-mail</label></div>
+              <div className="hiddenMobile">
+                <label className="formLabel">E-mail</label>
+              </div>
               <Field
                 name="email"
                 type="email"
@@ -89,7 +83,9 @@ const Forms = () => {
               />
             </div>
             <div>
-             <div className="hiddenMobile"><label className="formLabel">Confirmar e-mail</label></div>
+              <div className="hiddenMobile">
+                <label className="formLabel">Confirmar e-mail</label>
+              </div>
               <Field
                 name="confirmEmail"
                 type="email"
@@ -102,7 +98,9 @@ const Forms = () => {
               />
             </div>
             <div>
-              <div className="hiddenMobile"><label className="formLabel">Senha</label></div>
+              <div className="hiddenMobile">
+                <label className="formLabel">Senha</label>
+              </div>
               <Field
                 name="password"
                 type="password"
@@ -115,7 +113,9 @@ const Forms = () => {
               />
             </div>
             <div>
-              <div className="hiddenMobile"><label className="formLabel">Confirmar senha</label></div>
+              <div className="hiddenMobile">
+                <label className="formLabel">Confirmar senha</label>
+              </div>
               <Field
                 name="confirmPassword"
                 type="password"

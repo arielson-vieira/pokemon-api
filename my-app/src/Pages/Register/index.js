@@ -17,14 +17,14 @@ const Register = () => {
     setTime,
   } = useAuth();
 
-  function goToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
-
   const navigate = useNavigate();
+
+  const timer = () => {
+    return setTimeout(() => {
+      const currentTime = time - 1;
+      setTime(currentTime);
+    }, 1000);
+  };
 
   function goToConnect() {
     setUserConnect(true);
@@ -33,12 +33,12 @@ const Register = () => {
     goToTop();
   }
 
-  const timer = () => {
-    return setTimeout(() => {
-      const currentTime = time - 1;
-      setTime(currentTime);
-    }, 1000);
-  };
+  function goToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 
   useEffect(() => {
     const timeout = timer();
@@ -60,7 +60,7 @@ const Register = () => {
         )}
         {userRegisterDone && (
           <div className="registerDone">
-            <p>Cadastro realizado!</p>
+            <p>Cadastro realizado!!!</p>
             <div className="hiddenMobile">
               <p>Você será redirecionado em...{time} </p>
             </div>

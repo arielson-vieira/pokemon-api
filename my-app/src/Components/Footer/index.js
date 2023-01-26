@@ -5,11 +5,9 @@ import "./index.css";
 import iconPokemon from "../../Assets/Icon/iconPikachu.png";
 import { useAuth } from "../../Services/Providers/auth";
 
-
 const Footer = () => {
-  const { userConnect, setUserConnect } = useAuth();
+  const { userConnect } = useAuth();
 
-  const { userPublic, setUserPublic } = useAuth();
   const navigate = useNavigate();
 
   function goToTop() {
@@ -29,7 +27,7 @@ const Footer = () => {
       <div className="containerInfo">
         <div className="nameLeft">
           <Link to="/" onClick={goToTop}>
-            Pokemon Origins
+            <h1 className="hiddenMobile"> Pokemon|</h1>Origins
           </Link>
         </div>
         <div className="hiddenMobile">
@@ -38,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="nameRight">
-        {userConnect && <Link to="/pokemons">Pokemons</Link>}
+          {userConnect && <Link to="/pokemons">Pokemons</Link>}
           <Link to="/"> Filmes</Link>
         </div>
       </div>

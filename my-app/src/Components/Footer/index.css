@@ -55,24 +55,36 @@
 
 .nameLeft {
   display: flex;
-  width: 20%;
+  width: 100%;
 }
 
 .nameLeft a {
   display: flex;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: baseline;
+  justify-items: baseline;
+  justify-self: baseline;
   text-decoration: none;
   padding-left: 20px;
   color: white;
-  font-family: "Carter One", "Times New Roman", Times, serif;
+  font-family: "Rubik Mono One", "Times New Roman", Times, serif;
 }
 
 .nameLeft a:hover {
   color: rgb(252, 201, 133);
 }
 
+.iconFooter {
+  display: flex;
+  width: 100%;
+}
+
 .iconFooter img {
   display: flex;
-  height: 40px;
+  height: 60px;
+  margin-right: 21em;
 }
 
 .iconFooter img:hover {
@@ -87,25 +99,27 @@
     display: flex;
     flex-direction: column;
     background-color: #1c232e;
-    width: 100vw;
+    height: 140px;
     color: white;
     padding-top: 20px;
-    overflow-x: hidden
-
+    overflow-x: hidden;
   }
 
   .copyright footer {
     display: flex;
+    justify-content: center;
+    width: 100vw;
     font-size: 15px;
     font-family: "Roboto", sans-serif, Times;
+    margin: 29px 0 0 0;
   }
 
   .copyright {
     display: flex;
-    align-items: center;
-    align-content: center;
-    color: yellow;
-    margin-bottom: 10px;
+    align-items: baseline;
+    height: 30px;
+    align-items: baseline;
+    margin-bottom: 0px;
   }
 
   .containerInfo {
@@ -114,7 +128,7 @@
 
   .containerInfo a {
     display: flex;
-    font-size: 30px;
+    font-size: 20px;
     font-family: "Roboto", sans-serif, Times;
     background-color: b;
   }
@@ -151,7 +165,7 @@
     text-decoration: none;
     padding-left: 20px;
     color: white;
-    font-family: "Carter One", "Times New Roman", Times, serif;
+    font-family: "Chivo Mono", "Times New Roman", Times, serif;
   }
 
   .nameLeft a:hover {

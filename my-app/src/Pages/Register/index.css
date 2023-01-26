@@ -1,97 +1,91 @@
 .register {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .registerData {
-    min-height: 100vh;
-    padding-right: 30px;
-    background: url('../../Assets/Icon/ashGiff.gif');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-repeat: no-repeat, repeat-x;
-    background-position: top right, center;
-    background-size: cover;
+  min-height: 100vh;
+  padding-right: 30px;
+  background: url("../../Assets/Icon/ashGiff.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat-x;
+  background-position: top right, center;
+  background-size: cover;
 }
 
 .formLocation {
-    height: 100vh;
-    width: 100%;
-    background-color: red;
-    position: absolute;
-    background: url('../../Assets/Images/RegisterBackground.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-repeat: no-repeat, repeat-x;
-    background-position: top right, center;
-    background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  background: url("../../Assets/Images/RegisterBackground.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat-x;
+  background-position: top right, center;
+  background-size: cover;
 }
 
-
 .registerDone {
-    display: flex;
-    justify-content: center;
-    max-height: 300px;
-    background-color: rgba(0, 0, 0, 0.3);
-    margin: 50px 0 0 30px;
+  display: flex;
+  justify-content: center;
+  max-height: 300px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 50px 0 0 30px;
 }
 
 .registerDone p {
-    font-size: 30px;
-    color: rgb(252, 201, 65);
-    margin-right: 20px;
+  font-size: 30px;
+  color: rgb(252, 201, 65);
+  margin-right: 20px;
 }
 
 /* mobile */
 
 @media (min-width: 280px) and (max-width: 821px) {
-    .register {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        overflow-x: hidden
-    }
-    
-    .registerData {
-        min-height: 100vh;
-        background: url('../../Assets/Icon/ashGiff.gif');
-        /* background-size: contain; */
-        /* background-repeat: no-repeat; */
-        /* background-repeat: no-repeat, repeat-x; */
-        background-position: 30%,40% ;
-        background-size: cover;
-    }
-    
-    .formLocation {
-        width: 100vw;
-        background-color: red;
-        position: absolute;
-        background: url('../../Assets/Images/RegisterBackground.jpg');
-        background-size: contain;
-        /* background-repeat: no-repeat; */
-        /* background-repeat: no-repeat, repeat-x; */
-        background-position: top right, center;
-        background-size: cover;
-        background-position: 55% 0px ;
-    }
-    
-    
-    .registerDone {
-        max-height: 300px;
-        background-color: rgba(0, 0, 0, 0.3);
-        margin: 10px 0 0 30px;
-    }
-    
-    .registerDone p {
-        display: flex;
-        flex-direction: column;
-         font-size: 20px;
-        color: yellow;
-        margin: 0 0 0 50px;
-        font-family: "Rubik Mono One", "Times New Roman", Times, serif;
+  .register {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
 
-    }
+  .formLocation {
+    width: 100vw;
+    position: absolute;
+    background: url("../../Assets/Images/RegisterBackground.jpg");
+    background-size: contain;
+    background-position: top right, center;
+    background-size: cover;
+    background-position: 55% 0px;
+  }
 
+  .registerData {
+    background: url("../../Assets/Icon/ashGiff.gif");
+    background-repeat: repeat-x;
+    background-position: 50% 154px;
+    background-color: red;
+    height: 100vh;
+  }
+
+  .registerDone {
+    max-height: 300px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 0 0 0;
+    width: 100vw;
+  }
+
+  .registerDone p {
+    display: flex;
+
+    padding-left: 30px;
+    font-size: 30px;
+    width: 100vw;
+    color: yellow;
+    margin: 30px 0 0 0px;
+    font-family: "Rubik Mono One", "Times New Roman", Times, serif;
+  }
 }

@@ -32,6 +32,7 @@ const Connect = () => {
     navigate("/");
   };
 
+  
   function goToTop() {
     window.scrollTo({
       top: 0,
@@ -77,7 +78,7 @@ const Connect = () => {
                   />
                 </div>
                 <div className="allButtonConnect">
-                  <button onSubmit={""} onClick={userLogin}>
+                  <button type='submit' onClick={userLogin}>
                     <div className="buttonConnect">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

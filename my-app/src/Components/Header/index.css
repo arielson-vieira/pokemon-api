@@ -194,6 +194,7 @@
 @media (min-width: 280px) and (max-width: 821px) {
   .header {
     display: flex;
+    height: 60px;
     width: 100vw;
     align-items: center;
     justify-content: space-between;

@@ -46,9 +46,6 @@ const Header = (params) => {
         <Link to="/" onClick={goToTop} className="hiddenMobile">
           INÍCIO
         </Link>
-        <Link to="/" onClick={goToTop} className="hiddenMobile">
-          FILMES
-        </Link>
         {userConnect && <Link to="/pokemons">CARDS</Link>}
       </div>
       <div className="iconsRight">
@@ -78,7 +75,7 @@ const Header = (params) => {
         )}
         {userConnect && (
           <div className="userConnected">
-            <p>Username</p>
+            <p>Arielson</p>
             <img src={IconUser} alt="" />
           </div>
         )}

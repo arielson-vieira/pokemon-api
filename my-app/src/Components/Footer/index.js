@@ -3,10 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 import "./index.css";
 import iconPokemon from "../../Assets/Icon/iconPikachu.png";
-import { useAuth } from "../../Services/Providers/auth";
 
 const Footer = () => {
-  const { userConnect } = useAuth();
 
   const navigate = useNavigate();
 
@@ -27,17 +25,11 @@ const Footer = () => {
       <div className="containerInfo">
         <div className="nameLeft">
           <Link to="/" onClick={goToTop}>
-            <h1 className="hiddenMobile"> Pokemon|</h1>Origins
+            <p> POKEMON|Origins</p>
           </Link>
         </div>
-        <div className="hiddenMobile">
-          <div className="iconFooter" onClick={goToHome}>
-            <img src={iconPokemon} alt="" />
-          </div>
-        </div>
-        <div className="nameRight">
-          {userConnect && <Link to="/pokemons">Pokemons</Link>}
-          <Link to="/"> Filmes</Link>
+        <div className="iconFooter" onClick={goToHome}>
+          <img src={iconPokemon} alt="" />
         </div>
       </div>
 

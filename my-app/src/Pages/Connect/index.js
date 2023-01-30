@@ -20,7 +20,7 @@ const Connect = () => {
       .required("Insira o seu login.")
       .min(3, "Mínimo de 3 letras"),
     password: Yup.string()
-      .min(8, "A senha deve ter pelo menos 8 caracteres")
+      .min(3,"")
       .required("Senha é obrigatória"),
   });
 
